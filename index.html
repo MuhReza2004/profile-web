@@ -1,318 +1,537 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muh. Reza - Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/Background.png" />
+
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link href="style.css" rel="stylesheet" />
-    <link
-      rel="shortcut icon"
-      href="assets/Background.png"
-      type="image/x-icon"
-    />
-    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <div class="bg-animation"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
       <div class="nav-container">
         <div class="logo">
-          <img src="assets/Background.png" alt="navbar" />
-          <a href="#" class="home-link">Muh. Reza</a>
-        </div>
-        <div class="menu-toggle">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+          <div class="logo-icon">
+            <img src="assets/logo.png" alt="Logo MR" />
+          </div>
         </div>
         <ul class="nav-links">
-          <li><a href="#about" data-translate="about">About</a></li>
-          <li><a href="#education" data-translate="education">Education</a></li>
-          <li><a href="#skills" data-translate="skills">Skills</a></li>
-          <li><a href="#projects" data-translate="projects">Projects</a></li>
-          <li><a href="#contact" data-translate="contact">Contact</a></li>
-          <li class="language-switcher">
-            <button id="languageBtn">
-              <i class="fas fa-globe"></i>
-              <span>EN</span>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li>
+            <button class="language-btn">
+              <i class="fas fa-globe"></i> EN
             </button>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>
-    <div class="container">
-      <div class="header" id="about">
-        <h1 data-translate="aboutMe">About me</h1>
-        <!-- <div class="profile-pic">
-          <img
-            alt="Profile picture of a person standing with a thoughtful expression"
-            height="200"
-            src="assets/profile.png"
-            width="150"
-          />
-        </div> -->
-      </div>
-      <div class="content">
-        <p data-translate="introduction">
-          Hi! I'm Muh. Reza. I'm a Website developer and Information Technology
-          student at the Muslim University of Indonesia, Faculty of Computer
-          Science since 2022.
-        </p>
-        <p data-translate="goal">
-          My Goal: To challenge myself in new environments to learn, develop,
-          and enhance my skills through various projects and contribute more
-          with my abilities.
-        </p>
-      </div>
-      <div class="contact">
-        <div>
-          <i class="fas fa-envelope"> </i>
-          muh.reza2441@gmail.com
-        </div>
-        <div>
-          <i class="fab fa-linkedin"> </i>
-          linkedin.com/in/muh-reza
-        </div>
-        <div>
-          <i class="fab fa-instagram"> </i>
-          instagram.com/reezaaa_12
-        </div>
-      </div>
-      <div class="section" id="education">
-        <h2 data-translate="education">Education</h2>
-        <p data-translate="year">2022 - Present</p>
-        <p data-translate="university">
-          Muslim University of Indonesia - Information Technology
-        </p>
-      </div>
-      <div class="section" id="skills">
-        <h2 data-translate="skillSet">Soft skill</h2>
-        <div class="row">
-          <div class="column">
-            <p data-translate="teamwork">Teamwork</p>
-            <p data-translate="communication">Communication</p>
-          </div>
-          <div class="column">
-            <p data-translate="CriticalThinking">Critical Thinking</p>
-            <p data-translate="timeManagement">Time Management</p>
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <h2 data-translate="technicalSkill">Technical skill</h2>
-        <div class="skills">
-          <div>
-            <img
-              alt="Adobe Premiere Pro logo"
-              height="40"
-              src="https://storage.googleapis.com/a1aa/image/MUc00vZRWypEJR8Q2dNPgoU1ZiY9gS5mmQDevVRZn30l4Q6JA.jpg"
-              width="40"
-            />
-            Adobe Premiere Pro
-          </div>
-          <div>
-            <img
-              alt="Adobe Illustrator logo"
-              height="40"
-              src="https://storage.googleapis.com/a1aa/image/vKaHR0FENzKsM1jEKL3QBTyzr7aSP7qym03C53wxrIqTcI9E.jpg"
-              width="40"
-            />
-            Adobe Illustrator
-          </div>
-          <div>
-            <img
-              alt="Adobe Photoshop logo"
-              height="40"
-              src="https://storage.googleapis.com/a1aa/image/Sf0zPysFzPwfn0hmYj8kuiseUv1DJF2P2C0plRnDY9QbiDpnA.jpg"
-              width="40"
-            />
-            Adobe Photoshop
-          </div>
-        </div>
-      </div>
 
-      <div class="section">
-        <h2 data-translate="skillSet">Skill set</h2>
-        <div class="row">
-          <div class="column">
-            <p data-translate="userResearch">User research</p>
-            <p data-translate="brainstorming">Brainstorming</p>
-            <p data-translate="prototyping">Prototyping</p>
-          </div>
-          <div class="column">
-            <p data-translate="webDesign">Web Design</p>
-            <p data-translate="appDesign">App Design</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2 data-translate="programmingSkill">Programming Skill</h2>
-        <div class="row">
-          <div class="column">
-            <p>JavaScript</p>
-            <p>PHP</p>
-          </div>
-          <div class="column">
-            <p>NEXT JS</p>
-            <p>Laravel</p>
-            <p>react</p>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="projects">
-        <h2 data-translate="myProjects">My Projects</h2>
-        <div class="web-experience">
-          <p data-translate="webExperience">
-            I have created several websites that you can see below:
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm Muh. Reza</h1>
+          <p class="subtitle">Website Developer & IT Student</p>
+          <p>
+            I'm a passionate Website Developer and Information Technology
+            student at the Muslim University of Indonesia, Faculty of Computer
+            Science since 2022. I love creating innovative web solutions and
+            constantly learning new technologies.
           </p>
-
-          <div class="web-item">
-            <img
-              alt="Website 1 Screenshot"
-              height="400"
-              src="assets/bmi.png"
-              width="600"
-            />
-
-            <strong>Body Check:</strong>
-            <p data-translate="bodyCheckDescription">
-              website is built using simple HTML, CSS, and JavaScript, which
-              determines the Body Mass Index and provides activity
-              recommendations based on the results.
-            </p>
-            <a
-              href="https://body-check-six.vercel.app/"
-              target="_blank"
-              data-translate="visitWebsite"
-              >Visit Website</a
-            >
+          <div class="cta-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-code"></i>
+              View My Work
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i>
+              Get In Touch
+            </a>
           </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-card">
+            <div class="profile-pic">
+              <div
+                style="
+                  width: 100%;
+                  height: 100%;
 
-          <div class="web-item">
-            <img
-              alt="Website 2 Screenshot"
-              height="400"
-              src="assets/website1.png"
-              width="600"
-            />
-            <strong>Anime List:</strong>
-            <p data-translate="animeList">
-              I created this website following Dea Afrizal's YouTube tutorial to
-              learn NextJS. This website implements a Public API to display all
-              available anime.
-            </p>
-            <a
-              href="https://reza-anime-list.vercel.app/"
-              target="_blank"
-              data-translate="visitWebsite"
-              >Visit Website</a
-            >
-          </div>
-
-          <div class="web-item">
-            <img
-              alt="Website 3 Screenshot"
-              height="400"
-              src="assets/image.png"
-              width="600"
-            />
-            <strong>Mobile App Mentorme:</strong>
-            <p data-translate="mobileApp">
-              This is a Mobile App currently under development using Flutter.
-            </p>
-            <a
-              href="https://mentor-me-blush.vercel.app/"
-              target="_blank"
-              data-translate="comingSoon"
-              >Coming SOON!</a
-            >
-          </div>
-
-          <div class="web-item">
-            <img
-              alt="Website 4 Screenshot"
-              height="400"
-              src="assets/sikecil.png"
-              width="600"
-            />
-            <strong>Si Kecil Cerdas:</strong>
-            <p data-translate="siKecilCerdas">
-              This website provides child stimulation recommendations
-              appropriate for children aged 0-24 months.
-            </p>
-            <a
-              href="https://si-kecil-cerdas.vercel.app/"
-              target="_blank"
-              data-translate="visitWebsite"
-              >Visit Website!</a
-            >
-          </div>
-
-          <div class="web-item">
-            <img
-              alt="Website 5 Screenshot"
-              height="400"
-              src="assets/diet.png"
-              width="600"
-            />
-            <strong>Health Diet:</strong>
-            <p data-translate="healthDiet">
-              This website provides diet recommendations based on user's medical
-              history, aimed at those who want to maintain their health but are
-              unsure about the steps to take.
-            </p>
-            <a
-              href="https://healtdiet.vercel.app/"
-              target="_blank"
-              data-translate="visitWebsite"
-              >Visit Website</a
-            >
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  font-size: 3rem;
+                  font-weight: bold;
+                "
+              >
+                <img src="assets/profile.JPG" alt="" />
+              </div>
+            </div>
+            <h3>Muh. Reza</h3>
+            <p>Web Developer & IT Student</p>
+            <div class="social-links">
+              <a href="mailto:muh.reza2441@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="https://linkedin.com/in/muh-reza" class="social-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://instagram.com/reezaaa_12" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://github.com/MuhReza2004" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="section">
-        <h2 data-translate="interest">Interest</h2>
-        <p>Design Trends</p>
-        <p>Technology</p>
-      </div>
-      <div class="section">
-        <h2 data-translate="languages">Languages</h2>
-        <p>Indonesian (Native)</p>
-        <p>English (Pre-intermediate)</p>
-      </div>
-    </div>
-    <footer class="footer" id="contact">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Contact Me</h3>
-          <p><i class="fas fa-envelope"></i> muh.reza2441@gmail.com</p>
-          <p><i class="fas fa-phone"></i> +62 851-4170-5154</p>
-          <p><i class="fas fa-map-marker-alt"></i> Makassar, Indonesia</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="contact-content">
+        <div>
+          <h3
+            style="
+              font-size: 1.5rem;
+              margin-bottom: 1rem;
+              color: var(--primary-color);
+            "
+          >
+            My Goal
+          </h3>
+          <p
+            style="
+              font-size: 1.1rem;
+              line-height: 1.8;
+              color: var(--text-secondary);
+            "
+          >
+            To challenge myself in new environments to learn, develop, and
+            enhance my skills through various projects and contribute more with
+            my abilities. I'm passionate about creating innovative web solutions
+            that make a difference.
+          </p>
+          <div style="margin-top: 2rem">
+            <h4 style="color: var(--primary-color); margin-bottom: 1rem">
+              Education
+            </h4>
+            <p>
+              <strong>2022 - Present</strong><br />
+              Muslim University of Indonesia - Information Technology
+            </p>
+          </div>
         </div>
-        <div class="footer-section">
-          <h3>Social Media</h3>
-          <div class="social-links">
-            <a href="https://linkedin.com/in/muh-reza" target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="https://instagram.com/reezaaa_12" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://github.com/MuhReza2004" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>muh.reza2441@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>+62 851-4170-5154</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>Makassar, Indonesia</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Muh Reza. All rights reserved.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Programming Skills</h3>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fab fa-php"></i></div>
+            <span>PHP</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fab fa-react"></i></div>
+            <span>React</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+            <span>Next.js</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+            <span>Laravel</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-palette"></i> Design Skills</h3>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+            <span>Adobe Photoshop</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-vector-square"></i></div>
+            <span>Adobe Illustrator</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-video"></i></div>
+            <span>Adobe Premiere Pro</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-desktop"></i></div>
+            <span>Web Design</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+            <span>App Design</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-users"></i> Soft Skills</h3>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-handshake"></i></div>
+            <span>Teamwork</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-comments"></i></div>
+            <span>Communication</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+            <span>Critical Thinking</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-clock"></i></div>
+            <span>Time Management</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-search"></i></div>
+            <span>User Research</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/bmi.png" alt="" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Body Check</h3>
+            <p class="project-description">
+              A simple BMI calculator built with HTML, CSS, and JavaScript that
+              determines Body Mass Index and provides activity recommendations
+              based on results.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://body-check-six.vercel.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/website1.png" alt="" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Anime List</h3>
+            <p class="project-description">
+              A Next.js application that implements a public API to display
+              available anime. Built following modern React practices and
+              responsive design.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://reza-anime-list.vercel.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/mentorme.png" alt="" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">MentorMe</h3>
+            <p class="project-description">
+              MentorMe is a learning platform that connects students with
+              mentors through 1:1 sessions and real-world projects to build
+              digital skills and industry-ready portfolios.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://www.mentorme.id/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-clock"></i> Coming Soon
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/sikecil.png" alt="" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Si Kecil Cerdas</h3>
+            <p class="project-description">
+              A website providing child stimulation recommendations appropriate
+              for children aged 0-24 months. Helps parents with early childhood
+              development.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://si-kecil-cerdas.vercel.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/diet.png" alt="" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Health Diet</h3>
+            <p class="project-description">
+              A website providing personalized diet recommendations based on
+              user's medical history, aimed at health-conscious individuals
+              seeking guidance.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://healtdiet.vercel.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/mentora.png" alt="" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Mentora</h3>
+            <p class="project-description">
+              n AI-powered chatbot that recommends questions and helps users
+              explore topics interactively. Built with NextJS and Gemini API to
+              enhance learning through conversations.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://mentora-one.vercel.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div>
+          <h3
+            style="
+              font-size: 1.5rem;
+              margin-bottom: 1rem;
+              color: var(--primary-color);
+            "
+          >
+            Let's Work Together
+          </h3>
+          <p
+            style="
+              font-size: 1.1rem;
+              line-height: 1.8;
+              color: var(--text-secondary);
+              margin-bottom: 2rem;
+            "
+          >
+            I'm always open to discussing new opportunities, interesting
+            projects, and creative collaborations. Feel free to reach out if
+            you'd like to work together!
+          </p>
+          <div style="margin-bottom: 2rem">
+            <h4 style="color: var(--primary-color); margin-bottom: 1rem">
+              Languages
+            </h4>
+            <p>
+              <strong>Indonesian</strong> - Native<br />
+              <strong>English</strong> - Pre-intermediate
+            </p>
+          </div>
+          <div>
+            <h4 style="color: var(--primary-color); margin-bottom: 1rem">
+              Interests
+            </h4>
+            <p>Design Trends • Technology • Web Development</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>muh.reza2441@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>+62 851-4170-5154</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>Makassar, Indonesia</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/in/muh-reza</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      style="
+        background: var(--bg-secondary);
+        padding: 3rem 2rem 2rem;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      "
+    >
+      <div style="max-width: 1200px; margin: 0 auto">
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+          "
+        >
+          <a href="mailto:muh.reza2441@gmail.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/muh-reza"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://instagram.com/reezaaa_12"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://github.com/MuhReza2004"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <p style="color: var(--text-secondary)">
+          &copy; 2024 Muh Reza. All rights reserved.
+        </p>
       </div>
     </footer>
-    <script src="translations.js"></script>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="script.js"></script>
   </body>
 </html>

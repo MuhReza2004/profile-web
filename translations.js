@@ -6,9 +6,14 @@ const translations = {
     projects: "Projects",
     contact: "Contact",
     aboutMe: "About me",
-    introduction:
-      "Hi! I'm Muh. Reza. I'm a Website developer and Information Technology student at the Muslim University of Indonesia, Faculty of Computer Science since 2022.",
-    goal: "My Goal: To challenge myself in new environments to learn, develope, and enhance my skills through various projects and contribute more with my abilities.",
+    introduction: `Hi there! I'm a detail-oriented Web Developer and an Information Technology student at Universitas Muslim Indonesia since 2022.
+
+I fell in love with web development the moment I realized how exciting it is to turn ideas into intuitive, responsive, and impactful websites. I genuinely enjoy the entire process from designing clean and engaging interfaces to building solid logic that works seamlessly behind the scenes.
+
+For me, a website is more than just a tool it's an experience. I believe that when great visuals meet strong functionality, they create something memorable.
+
+I'm currently open to collaborations, freelance projects, and anything tech-related. Got an idea in mind? Let’s bring it to life together!`,
+    goal: `My goal is simple yet impactful: to build websites that not only work perfectly but also deliver meaningful and enjoyable user experiences. I aim to grow continuously as a developer, stay curious about new technologies, and contribute to impactful digital projects. In the long run, I hope to be part of a team that uses tech to solve real-world problems.`,
     softSkill: "Soft skill",
     technicalSkill: "Technical skill",
     skillSet: "Skill set",
@@ -51,9 +56,14 @@ const translations = {
     projects: "Proyek",
     contact: "Kontak",
     aboutMe: "Tentang Saya",
-    introduction:
-      "Hai! Saya Muh. Reza. Saya adalah pengembang Website dan mahasiswa Teknologi Informasi di Universitas Muslim Indonesia, Fakultas Ilmu Komputer sejak 2022.",
-    goal: "Tujuan Saya: Untuk menantang diri dalam lingkungan baru untuk belajar, berkembang, dan meningkatkan keterampilan saya melalui berbagai proyek dan berkontribusi lebih banyak dengan kemampuan saya.",
+    introduction: `Halo! Saya adalah seorang Web Developer yang berorientasi pada detail dan juga mahasiswa Teknologi Informasi di Universitas Muslim Indonesia sejak 2022.
+
+Sejak mengenal dunia pengembangan web, saya jatuh cinta pada proses menciptakan sesuatu dari nol hingga mengubah ide menjadi website yang intuitif, responsif, dan berdampak. Saya menikmati tiap langkahnya: mendesain antarmuka yang menarik, membangun struktur kode yang rapi, hingga memastikan semuanya berjalan mulus di balik layar.
+
+Bagi saya, website bukan hanya sekadar alat, tapi pengalaman. Saya percaya kombinasi antara tampilan visual yang menarik dan logika yang solid bisa menciptakan kesan yang tak terlupakan.
+
+Saat ini, saya terbuka untuk berbagai bentuk kolaborasi, proyek freelance, atau diskusi seputar teknologi. Jika kamu punya ide, ayo kita wujudkan bersama jadi sesuatu yang keren!`,
+    goal: `Tujuan saya sederhana namun kuat: menciptakan website yang tidak hanya berfungsi dengan baik, tapi juga memberikan pengalaman yang menyenangkan dan bermakna bagi pengguna. Saya ingin terus berkembang sebagai developer, memperluas wawasan teknologi, serta berkontribusi dalam proyek-proyek digital yang berdampak. Dalam jangka panjang, saya berharap bisa menjadi bagian dari tim yang membangun solusi teknologi untuk memecahkan masalah nyata di masyarakat.`,
     softSkill: "Kemampuan Lunak",
     technicalSkill: "Kemampuan Teknis",
     skillSet: "Kumpulan Keahlian",
