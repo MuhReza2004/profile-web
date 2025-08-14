@@ -61,14 +61,28 @@ document
     observer.observe(el);
   });
 
-// Language switcher (placeholder functionality)
-document.querySelector(".language-btn").addEventListener("click", function () {
-  const currentLang = this.querySelector("span").textContent;
-  if (currentLang === "EN") {
-    this.querySelector("span").textContent = "ID";
-  } else {
-    this.querySelector("span").textContent = "EN";
+// Language switcher
+const languageBtn = document.querySelector(".language-btn");
+let currentLang = "en";
+
+function setLanguage(lang) {
+  const elements = document.querySelectorAll("[data-translate]");
+  elements.forEach((el) => {
+    const key = el.getAttribute("data-translate");
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+  document.documentElement.lang = lang;
+  const langSpan = languageBtn.querySelector('span');
+  if(langSpan) {
+    langSpan.textContent = lang.toUpperCase();
   }
+}
+
+languageBtn.addEventListener("click", function () {
+  currentLang = currentLang === "en" ? "id" : "en";
+  setLanguage(currentLang);
 });
 
 // Add loading animation
@@ -78,6 +92,7 @@ window.addEventListener("load", function () {
   setTimeout(() => {
     document.body.style.opacity = "1";
   }, 100);
+  setLanguage('id'); // Set initial language to Indonesian
 });
 
 // Parallax effect for hero section
@@ -169,5 +184,3 @@ style.textContent = `
             }
         `;
 document.head.appendChild(style);
-
-

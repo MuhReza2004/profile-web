@@ -29,16 +29,17 @@
           </div>
         </div>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <!-- <li>
+          <li><a href="#home" data-translate="home">Home</a></li>
+          <li><a href="#about" data-translate="about">About</a></li>
+          <li><a href="#skills" data-translate="skills">Skills</a></li>
+          <li><a href="#projects" data-translate="projects">Projects</a></li>
+          <li><a href="#contact" data-translate="contact">Contact</a></li>
+          <li>
             <button class="language-btn">
-              <i class="fas fa-globe"></i> EN
+              <i class="fas fa-globe"></i>
+              <span data-translate="language">EN</span>
             </button>
-          </li> -->
+          </li>
         </ul>
       </div>
     </nav>
@@ -48,8 +49,10 @@
       <div class="hero-content">
         <div class="hero-text">
           <h1>Hi, I'm Muh. Reza</h1>
-          <p class="subtitle">Website Developer & IT Student</p>
-          <p>
+          <p class="subtitle" data-translate="jobTitle">
+            Website Developer & IT Student
+          </p>
+          <p data-translate="introduction">
             I'm a passionate Website Developer and Information Technology
             student at the Muslim University of Indonesia, Faculty of Computer
             Science since 2022. I love creating innovative web solutions and
@@ -58,11 +61,11 @@
           <div class="cta-buttons">
             <a href="#projects" class="btn btn-primary">
               <i class="fas fa-code"></i>
-              View My Work
+              <span data-translate="viewMyWork">View My Work</span>
             </a>
             <a href="#contact" class="btn btn-secondary">
               <i class="fas fa-envelope"></i>
-              Get In Touch
+              <span data-translate="getInTouch">Get In Touch</span>
             </a>
           </div>
         </div>
@@ -86,7 +89,7 @@
               </div>
             </div>
             <h3>Muh. Reza</h3>
-            <p>Web Developer & IT Student</p>
+            <p data-translate="jobTitle2">Web Developer & IT Student</p>
             <div class="social-links">
               <a href="mailto:muh.reza2441@gmail.com" class="social-link">
                 <i class="fas fa-envelope"></i>
@@ -108,7 +111,7 @@
 
     <!-- About Section -->
     <section class="section" id="about">
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title" data-translate="aboutMe">About Me</h2>
       <div class="contact-content">
         <div>
           <h3
@@ -117,6 +120,7 @@
               margin-bottom: 1rem;
               color: var(--primary-color);
             "
+            data-translate="myGoal"
           >
             My Goal
           </h3>
@@ -126,6 +130,7 @@
               line-height: 1.8;
               color: var(--text-secondary);
             "
+            data-translate="goal"
           >
             To challenge myself in new environments to learn, develop, and
             enhance my skills through various projects and contribute more with
@@ -133,12 +138,17 @@
             that make a difference.
           </p>
           <div style="margin-top: 2rem">
-            <h4 style="color: var(--primary-color); margin-bottom: 1rem">
+            <h4
+              style="color: var(--primary-color); margin-bottom: 1rem"
+              data-translate="education"
+            >
               Education
             </h4>
             <p>
-              <strong>2022 - Present</strong><br />
-              Muslim University of Indonesia - Information Technology
+              <strong data-translate="year">2022 - Present</strong><br />
+              <span data-translate="university"
+                >Muslim University of Indonesia - Information Technology</span
+              >
             </p>
           </div>
         </div>
@@ -148,7 +158,7 @@
               <i class="fas fa-envelope"></i>
             </div>
             <div>
-              <h4>Email</h4>
+              <h4 data-translate="email">Email</h4>
               <p>muh.reza2441@gmail.com</p>
             </div>
           </div>
@@ -157,7 +167,7 @@
               <i class="fas fa-phone"></i>
             </div>
             <div>
-              <h4>Phone</h4>
+              <h4 data-translate="phone">Phone</h4>
               <p>+62 851-4170-5154</p>
             </div>
           </div>
@@ -166,7 +176,7 @@
               <i class="fas fa-map-marker-alt"></i>
             </div>
             <div>
-              <h4>Location</h4>
+              <h4 data-translate="location">Location</h4>
               <p>Makassar, Indonesia</p>
             </div>
           </div>
@@ -176,10 +186,15 @@
 
     <!-- Skills Section -->
     <section class="section" id="skills">
-      <h2 class="section-title">Skills & Expertise</h2>
+      <h2 class="section-title" data-translate="skillSet">
+        Skills & Expertise
+      </h2>
       <div class="skills-grid">
         <div class="skill-category">
-          <h3><i class="fas fa-code"></i> Programming Skills</h3>
+          <h3>
+            <i class="fas fa-code"></i>
+            <span data-translate="programmingSkill">Programming Skills</span>
+          </h3>
           <div class="skill-item">
             <div class="skill-icon"><i class="fab fa-js"></i></div>
             <span>JavaScript</span>
@@ -203,7 +218,10 @@
         </div>
 
         <div class="skill-category">
-          <h3><i class="fas fa-palette"></i> Design Skills</h3>
+          <h3>
+            <i class="fas fa-palette"></i>
+            <span data-translate="designSkills">Design Skills</span>
+          </h3>
           <div class="skill-item">
             <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
             <span>Adobe Photoshop</span>
@@ -218,35 +236,38 @@
           </div>
           <div class="skill-item">
             <div class="skill-icon"><i class="fas fa-desktop"></i></div>
-            <span>Web Design</span>
+            <span data-translate="webDesign">Web Design</span>
           </div>
           <div class="skill-item">
             <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
-            <span>App Design</span>
+            <span data-translate="appDesign">App Design</span>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3><i class="fas fa-users"></i> Soft Skills</h3>
+          <h3>
+            <i class="fas fa-users"></i>
+            <span data-translate="softSkill">Soft Skills</span>
+          </h3>
           <div class="skill-item">
             <div class="skill-icon"><i class="fas fa-handshake"></i></div>
-            <span>Teamwork</span>
+            <span data-translate="teamwork">Teamwork</span>
           </div>
           <div class="skill-item">
             <div class="skill-icon"><i class="fas fa-comments"></i></div>
-            <span>Communication</span>
+            <span data-translate="communication">Communication</span>
           </div>
           <div class="skill-item">
             <div class="skill-icon"><i class="fas fa-brain"></i></div>
-            <span>Critical Thinking</span>
+            <span data-translate="CriticalThinking">Critical Thinking</span>
           </div>
           <div class="skill-item">
             <div class="skill-icon"><i class="fas fa-clock"></i></div>
-            <span>Time Management</span>
+            <span data-translate="timeManagement">Time Management</span>
           </div>
           <div class="skill-item">
             <div class="skill-icon"><i class="fas fa-search"></i></div>
-            <span>User Research</span>
+            <span data-translate="userResearch">User Research</span>
           </div>
         </div>
       </div>
@@ -254,7 +275,7 @@
 
     <!-- Projects Section -->
     <section class="section" id="projects">
-      <h2 class="section-title">My Projects</h2>
+      <h2 class="section-title" data-translate="myProjects">My Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
           <div class="project-image">
@@ -262,7 +283,10 @@
           </div>
           <div class="project-content">
             <h3 class="project-title">Body Check</h3>
-            <p class="project-description">
+            <p
+              class="project-description"
+              data-translate="bodyCheckDescription"
+            >
               A simple BMI calculator built with HTML, CSS, and JavaScript that
               determines Body Mass Index and provides activity recommendations
               based on results.
@@ -273,7 +297,8 @@
                 target="_blank"
                 class="project-link"
               >
-                <i class="fas fa-external-link-alt"></i> Live Demo
+                <i class="fas fa-external-link-alt"></i>
+                <span data-translate="visitWebsite">Live Demo</span>
               </a>
             </div>
           </div>
@@ -285,7 +310,7 @@
           </div>
           <div class="project-content">
             <h3 class="project-title">Anime List</h3>
-            <p class="project-description">
+            <p class="project-description" data-translate="animeList">
               A Next.js application that implements a public API to display
               available anime. Built following modern React practices and
               responsive design.
@@ -296,19 +321,18 @@
                 target="_blank"
                 class="project-link"
               >
-                <i class="fas fa-external-link-alt"></i> Live Demo
+                <i class="fas fa-external-link-alt"></i>
+                <span data-translate="visitWebsite">Live Demo</span>
               </a>
             </div>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-image">
-            <img src="assets/mentorme.png" alt="" />
-          </div>
+          <div class="project-image">.png" alt="" /></div>
           <div class="project-content">
             <h3 class="project-title">MentorMe</h3>
-            <p class="project-description">
+            <p class="project-description" data-translate="mentorMe">
               MentorMe is a learning platform that connects students with
               mentors through 1:1 sessions and real-world projects to build
               digital skills and industry-ready portfolios.
@@ -319,7 +343,8 @@
                 target="_blank"
                 class="project-link"
               >
-                <i class="fas fa-external-link-alt"></i> Live Demo
+                <i class="fas fa-external-link-alt"></i>
+                <span data-translate="visitWebsite">Live Demo</span>
               </a>
             </div>
           </div>
@@ -331,7 +356,7 @@
           </div>
           <div class="project-content">
             <h3 class="project-title">Si Kecil Cerdas</h3>
-            <p class="project-description">
+            <p class="project-description" data-translate="siKecilCerdas">
               A website providing child stimulation recommendations appropriate
               for children aged 0-24 months. Helps parents with early childhood
               development.
@@ -342,7 +367,56 @@
                 target="_blank"
                 class="project-link"
               >
-                <i class="fas fa-external-link-alt"></i> Live Demo
+                <i class="fas fa-external-link-alt"></i>
+                <span data-translate="visitWebsite">Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/howmany.png" alt="" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">HowMany</h3>
+            <p class="project-description" data-translate="howMany">
+              A web application that helps users track their daily water intake
+              and stay hydrated. Built with a user-friendly interface and
+              responsive design.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://how-many-nine.vercel.app/calculator.html"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i>
+                <span data-translate="visitWebsite">Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/kalkusehat.png" alt="" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Kalku Sehat</h3>
+            <p class="project-description" data-translate="kalkuSehat">
+              A web application that helps users calculate their daily calorie
+              intake and provides personalized meal plans. Built with a
+              user-friendly interface and responsive design.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://kalku-sehat.vercel.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i>
+                <span data-translate="visitWebsite">Live Demo</span>
               </a>
             </div>
           </div>
@@ -354,7 +428,7 @@
           </div>
           <div class="project-content">
             <h3 class="project-title">Health Diet</h3>
-            <p class="project-description">
+            <p class="project-description" data-translate="healthDiet">
               A website providing personalized diet recommendations based on
               user's medical history, aimed at health-conscious individuals
               seeking guidance.
@@ -365,7 +439,8 @@
                 target="_blank"
                 class="project-link"
               >
-                <i class="fas fa-external-link-alt"></i> Live Demo
+                <i class="fas fa-external-link-alt"></i>
+                <span data-translate="visitWebsite">Live Demo</span>
               </a>
             </div>
           </div>
@@ -376,7 +451,7 @@
           </div>
           <div class="project-content">
             <h3 class="project-title">Mentora</h3>
-            <p class="project-description">
+            <p class="project-description" data-translate="mentora">
               n AI-powered chatbot that recommends questions and helps users
               explore topics interactively. Built with NextJS and Gemini API to
               enhance learning through conversations.
@@ -387,7 +462,8 @@
                 target="_blank"
                 class="project-link"
               >
-                <i class="fas fa-tools"></i> Coming Soon
+                <i class="fas fa-tools"></i>
+                <span data-translate="comingSoon">Coming Soon</span>
               </a>
             </div>
           </div>
@@ -397,7 +473,7 @@
 
     <!-- Contact Section -->
     <section class="section" id="contact">
-      <h2 class="section-title">Get In Touch</h2>
+      <h2 class="section-title" data-translate="getInTouch2">Get In Touch</h2>
       <div class="contact-content">
         <div>
           <h3
@@ -406,6 +482,7 @@
               margin-bottom: 1rem;
               color: var(--primary-color);
             "
+            data-translate="letsWorkTogether"
           >
             Let's Work Together
           </h3>
@@ -416,25 +493,36 @@
               color: var(--text-secondary);
               margin-bottom: 2rem;
             "
+            data-translate="collaboration"
           >
             I'm always open to discussing new opportunities, interesting
             projects, and creative collaborations. Feel free to reach out if
             you'd like to work together!
           </p>
           <div style="margin-bottom: 2rem">
-            <h4 style="color: var(--primary-color); margin-bottom: 1rem">
+            <h4
+              style="color: var(--primary-color); margin-bottom: 1rem"
+              data-translate="languages"
+            >
               Languages
             </h4>
             <p>
-              <strong>Indonesian</strong> - Native<br />
-              <strong>English</strong> - Pre-intermediate
+              <strong data-translate="indonesian">Indonesian</strong> -
+              Native<br />
+              <strong data-translate="english">English</strong> -
+              Pre-intermediate
             </p>
           </div>
           <div>
-            <h4 style="color: var(--primary-color); margin-bottom: 1rem">
+            <h4
+              style="color: var(--primary-color); margin-bottom: 1rem"
+              data-translate="interests"
+            >
               Interests
             </h4>
-            <p>Design Trends • Technology • Web Development</p>
+            <p data-translate="designTrends">
+              Design Trends • Technology • Web Development
+            </p>
           </div>
         </div>
         <div class="contact-info">
@@ -443,7 +531,7 @@
               <i class="fas fa-envelope"></i>
             </div>
             <div>
-              <h4>Email</h4>
+              <h4 data-translate="email2">Email</h4>
               <p>muh.reza2441@gmail.com</p>
             </div>
           </div>
@@ -452,7 +540,7 @@
               <i class="fas fa-phone"></i>
             </div>
             <div>
-              <h4>Phone</h4>
+              <h4 data-translate="phone2">Phone</h4>
               <p>+62 851-4170-5154</p>
             </div>
           </div>
@@ -461,7 +549,7 @@
               <i class="fas fa-map-marker-alt"></i>
             </div>
             <div>
-              <h4>Location</h4>
+              <h4 data-translate="location2">Location</h4>
               <p>Makassar, Indonesia</p>
             </div>
           </div>
@@ -470,7 +558,7 @@
               <i class="fab fa-linkedin"></i>
             </div>
             <div>
-              <h4>LinkedIn</h4>
+              <h4 data-translate="linkedin">LinkedIn</h4>
               <p>linkedin.com/in/muh-reza</p>
             </div>
           </div>
@@ -521,7 +609,7 @@
             <i class="fab fa-github"></i>
           </a>
         </div>
-        <p style="color: var(--text-secondary)">
+        <p style="color: var(--text-secondary)" data-translate="allRights">
           &copy; 2024 Muh Reza. All rights reserved.
         </p>
       </div>
@@ -532,6 +620,7 @@
       <i class="fas fa-arrow-up"></i>
     </button>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
