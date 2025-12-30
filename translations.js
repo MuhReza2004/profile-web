@@ -53,13 +53,18 @@ const translations = {
     phone: "Phone",
     location: "Location",
     designSkills: "Design Skills",
-    mentorMe: "MentorMe is a learning platform that connects students with mentors through 1:1 sessions and real-world projects to build digital skills and industry-ready portfolios.",
-    howMany: "A web application that helps users track their daily water intake and stay hydrated. Built with a user-friendly interface and responsive design.",
-    kalkuSehat: "A web application that helps users calculate their daily calorie intake and provides personalized meal plans. Built with a user-friendly interface and responsive design.",
-    mentora: "n AI-powered chatbot that recommends questions and helps users explore topics interactively. Built with NextJS and Gemini API to enhance learning through conversations.",
+    mentorMe:
+      "MentorMe is a learning platform that connects students with mentors through 1:1 sessions and real-world projects to build digital skills and industry-ready portfolios.",
+    howMany:
+      "A web application that helps users track their daily water intake and stay hydrated. Built with a user-friendly interface and responsive design.",
+    kalkuSehat:
+      "A web application that helps users calculate their daily calorie intake and provides personalized meal plans. Built with a user-friendly interface and responsive design.",
+    mentora:
+      "n AI-powered chatbot that recommends questions and helps users explore topics interactively. Built with NextJS and Gemini API to enhance learning through conversations.",
     getInTouch2: "Get In Touch",
     letsWorkTogether: "Let's Work Together",
-    collaboration: "I'm always open to discussing new opportunities, interesting projects, and creative collaborations. Feel free to reach out if you'd like to work together!",
+    collaboration:
+      "I'm always open to discussing new opportunities, interesting projects, and creative collaborations. Feel free to reach out if you'd like to work together!",
     indonesian: "Indonesian",
     english: "English",
     interests: "Interests",
@@ -67,7 +72,9 @@ const translations = {
     email2: "Email",
     phone2: "Phone",
     location2: "Location",
-    linkedin: "LinkedIn"
+    linkedin: "LinkedIn",
+    homeWorkers:
+      "Home service platform providing household maintenance services like AC repair, electronics, and home repairs. Connecting customers with trusted technicians for all home repair and maintenance needs.",
   },
   id: {
     about: "Tentang",
@@ -76,7 +83,7 @@ const translations = {
     projects: "Proyek",
     contact: "Kontak",
     aboutMe: "Tentang Saya",
-    introduction: `Halo! Saya adalah seorang Web Developer yang berorientasi pada detail dan juga mahasiswa Teknologi Informasi di Universitas Muslim Indonesia sejak 2022.`, 
+    introduction: `Halo! Saya adalah seorang Web Developer yang berorientasi pada detail dan juga mahasiswa Teknologi Informasi di Universitas Muslim Indonesia sejak 2022.`,
     goal: `Menantang diri saya di lingkungan baru untuk belajar, berkembang, dan meningkatkan keterampilan saya melalui berbagai proyek dan berkontribusi lebih banyak dengan kemampuan saya. Saya bersemangat dalam menciptakan solusi web inovatif yang membuat perbedaan.`,
     softSkill: "Kemampuan Lunak",
     technicalSkill: "Kemampuan Teknis",
@@ -124,13 +131,18 @@ const translations = {
     phone: "Telepon",
     location: "Lokasi",
     designSkills: "Keterampilan Desain",
-    mentorMe: "MentorMe adalah platform pembelajaran yang menghubungkan siswa dengan mentor melalui sesi 1:1 dan proyek dunia nyata untuk membangun keterampilan digital dan portofolio yang siap industri.",
-    howMany: "Aplikasi web yang membantu pengguna melacak asupan air harian mereka dan tetap terhidrasi. Dibangun dengan antarmuka yang ramah pengguna dan desain responsif.",
-    kalkuSehat: "Aplikasi web yang membantu pengguna menghitung asupan kalori harian mereka dan menyediakan rencana makan yang dipersonalisasi. Dibangun dengan antarmuka yang ramah pengguna dan desain responsif.",
-    mentora: "Chatbot bertenaga AI yang merekomendasikan pertanyaan dan membantu pengguna menjelajahi topik secara interaktif. Dibangun dengan NextJS dan Gemini API untuk meningkatkan pembelajaran melalui percakapan.",
+    mentorMe:
+      "MentorMe adalah platform pembelajaran yang menghubungkan siswa dengan mentor melalui sesi 1:1 dan proyek dunia nyata untuk membangun keterampilan digital dan portofolio yang siap industri.",
+    howMany:
+      "Aplikasi web yang membantu pengguna melacak asupan air harian mereka dan tetap terhidrasi. Dibangun dengan antarmuka yang ramah pengguna dan desain responsif.",
+    kalkuSehat:
+      "Aplikasi web yang membantu pengguna menghitung asupan kalori harian mereka dan menyediakan rencana makan yang dipersonalisasi. Dibangun dengan antarmuka yang ramah pengguna dan desain responsif.",
+    mentora:
+      "Chatbot bertenaga AI yang merekomendasikan pertanyaan dan membantu pengguna menjelajahi topik secara interaktif. Dibangun dengan NextJS dan Gemini API untuk meningkatkan pembelajaran melalui percakapan.",
     getInTouch2: "Hubungi",
     letsWorkTogether: "Mari Bekerja Sama",
-    collaboration: "Saya selalu terbuka untuk mendiskusikan peluang baru, proyek menarik, dan kolaborasi kreatif. Jangan ragu untuk menghubungi jika Anda ingin bekerja sama!",
+    collaboration:
+      "Saya selalu terbuka untuk mendiskusikan peluang baru, proyek menarik, dan kolaborasi kreatif. Jangan ragu untuk menghubungi jika Anda ingin bekerja sama!",
     indonesian: "Bahasa Indonesia",
     english: "Bahasa Inggris",
     interests: "Minat",
@@ -138,6 +150,22 @@ const translations = {
     email2: "Email",
     phone2: "Telepon",
     location2: "Lokasi",
-    linkedin: "LinkedIn"
+    linkedin: "LinkedIn",
+    achievements: "Pencapaian",
+    completedProjects: "Proyek Selesai",
+    projectsDescription:
+      "Aplikasi web dan situs web yang dibangun dengan teknologi modern",
+    linesOfCode: "Baris Kode",
+    codeDescription: "Kode bersih, efisien, dan dapat dipelihara yang ditulis",
+    happyClients: "Klien Puas",
+    clientsDescription: "Klien puas dari berbagai proyek dan kolaborasi",
+    certifications: "Sertifikasi",
+    certificationsDescription:
+      "Sertifikasi profesional dalam pengembangan web dan desain",
+    experience: "Tahun Pengalaman",
+    experienceDescription: "Tahun pengalaman langsung dalam pengembangan web",
+    technologies: "Teknologi Dikuasai",
+    technologiesDescription:
+      "Teknologi web modern dan framework yang dipelajari",
   },
 };

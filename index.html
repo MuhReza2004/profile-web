@@ -19,6 +19,7 @@
   </head>
   <body>
     <div class="bg-animation"></div>
+    <canvas id="particle-canvas"></canvas>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -32,6 +33,11 @@
           <li><a href="#home" data-translate="home">Home</a></li>
           <li><a href="#about" data-translate="about">About</a></li>
           <li><a href="#skills" data-translate="skills">Skills</a></li>
+          <li>
+            <a href="#achievements" data-translate="achievements"
+              >Achievements</a
+            >
+          </li>
           <li><a href="#projects" data-translate="projects">Projects</a></li>
           <li><a href="#contact" data-translate="contact">Contact</a></li>
           <li>
@@ -197,23 +203,48 @@
           </h3>
           <div class="skill-item">
             <div class="skill-icon"><i class="fab fa-js"></i></div>
-            <span>JavaScript</span>
+            <div class="skill-info">
+              <span>JavaScript</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 85%"></div>
+              </div>
+            </div>
           </div>
           <div class="skill-item">
             <div class="skill-icon"><i class="fab fa-php"></i></div>
-            <span>PHP</span>
+            <div class="skill-info">
+              <span>PHP</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%"></div>
+              </div>
+            </div>
           </div>
           <div class="skill-item">
             <div class="skill-icon"><i class="fab fa-react"></i></div>
-            <span>React</span>
+            <div class="skill-info">
+              <span>React</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%"></div>
+              </div>
+            </div>
           </div>
           <div class="skill-item">
             <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
-            <span>Next.js</span>
+            <div class="skill-info">
+              <span>Next.js</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 70%"></div>
+              </div>
+            </div>
           </div>
           <div class="skill-item">
             <div class="skill-icon"><i class="fab fa-laravel"></i></div>
-            <span>Laravel</span>
+            <div class="skill-info">
+              <span>Laravel</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%"></div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -251,27 +282,124 @@
           </h3>
           <div class="skill-item">
             <div class="skill-icon"><i class="fas fa-handshake"></i></div>
-            <span data-translate="teamwork">Teamwork</span>
+            <div class="skill-info">
+              <span data-translate="teamwork">Teamwork</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%"></div>
+              </div>
+            </div>
           </div>
           <div class="skill-item">
             <div class="skill-icon"><i class="fas fa-comments"></i></div>
-            <span data-translate="communication">Communication</span>
+            <div class="skill-info">
+              <span data-translate="communication">Communication</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 85%"></div>
+              </div>
+            </div>
           </div>
           <div class="skill-item">
             <div class="skill-icon"><i class="fas fa-brain"></i></div>
-            <span data-translate="CriticalThinking">Critical Thinking</span>
+            <div class="skill-info">
+              <span data-translate="CriticalThinking">Critical Thinking</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 88%"></div>
+              </div>
+            </div>
           </div>
           <div class="skill-item">
             <div class="skill-icon"><i class="fas fa-clock"></i></div>
-            <span data-translate="timeManagement">Time Management</span>
+            <div class="skill-info">
+              <span data-translate="timeManagement">Time Management</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 82%"></div>
+              </div>
+            </div>
           </div>
           <div class="skill-item">
             <div class="skill-icon"><i class="fas fa-search"></i></div>
-            <span data-translate="userResearch">User Research</span>
+            <div class="skill-info">
+              <span data-translate="userResearch">User Research</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 78%"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Achievements Section -->
+    <!-- <section class="section" id="achievements">
+      <h2 class="section-title" data-translate="achievements">Achievements</h2>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3 data-translate="completedProjects">Completed Projects</h3>
+          <p class="achievement-number">8+</p>
+          <p data-translate="projectsDescription">
+            Web applications and websites built with modern technologies
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 data-translate="linesOfCode">Lines of Code</h3>
+          <p class="achievement-number">10K+</p>
+          <p data-translate="codeDescription">
+            Clean, efficient, and maintainable code written
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 data-translate="happyClients">Happy Clients</h3>
+          <p class="achievement-number">15+</p>
+          <p data-translate="clientsDescription">
+            Satisfied clients from various projects and collaborations
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 data-translate="certifications">Certifications</h3>
+          <p class="achievement-number">5+</p>
+          <p data-translate="certificationsDescription">
+            Professional certifications in web development and design
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 data-translate="experience">Years of Experience</h3>
+          <p class="achievement-number">2+</p>
+          <p data-translate="experienceDescription">
+            Years of hands-on experience in web development
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3 data-translate="technologies">Technologies Mastered</h3>
+          <p class="achievement-number">15+</p>
+          <p data-translate="technologiesDescription">
+            Modern web technologies and frameworks learned
+          </p>
+        </div>
+      </div>
+    </section> -->
 
     <!-- Projects Section -->
     <section class="section" id="projects">
@@ -329,7 +457,9 @@
         </div>
 
         <div class="project-card">
-          <div class="project-image">.png" alt="" /></div>
+          <div class="project-image">
+            <img src="assets/mentorme1.png" alt="" />
+          </div>
           <div class="project-content">
             <h3 class="project-title">MentorMe</h3>
             <p class="project-description" data-translate="mentorMe">
@@ -339,7 +469,7 @@
             </p>
             <div class="project-links">
               <a
-                href="https://www.mentorme.id/"
+                href="https://mentorme-web-mentor.vercel.app/"
                 target="_blank"
                 class="project-link"
               >
@@ -447,21 +577,18 @@
         </div>
         <div class="project-card">
           <div class="project-image">
-            <img src="assets/mentora.png" alt="" />
+            <img src="assets/homeworkers.png" alt="" />
           </div>
           <div class="project-content">
-            <h3 class="project-title">Mentora</h3>
-            <p class="project-description" data-translate="mentora">
-              n AI-powered chatbot that recommends questions and helps users
-              explore topics interactively. Built with NextJS and Gemini API to
-              enhance learning through conversations.
+            <h3 class="project-title">Home Workers</h3>
+            <p class="project-description" data-translate="homeWorkers">
+              Platform penyedia layanan service rumah tangga seperti service AC,
+              elektronik, dan perbaikan rumah. Menghubungkan pelanggan dengan
+              teknisi terpercaya untuk kebutuhan perbaikan dan pemeliharaan
+              rumah.
             </p>
             <div class="project-links">
-              <a
-                href="https://mentora-one.vercel.app/"
-                target="_blank"
-                class="project-link"
-              >
+              <a href="https://www.homeworkers.id/" class="project-link">
                 <i class="fas fa-tools"></i>
                 <span data-translate="comingSoon">Coming Soon</span>
               </a>
@@ -525,44 +652,39 @@
             </p>
           </div>
         </div>
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
+        <!-- <div class="contact-form-container">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name" data-translate="name">Name</label>
+              <input type="text" id="name" name="name" required />
             </div>
-            <div>
-              <h4 data-translate="email2">Email</h4>
-              <p>muh.reza2441@gmail.com</p>
+            <div class="form-group">
+              <label for="email" data-translate="emailForm">Email</label>
+              <input type="email" id="email" name="email" required />
             </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-phone"></i>
+            <div class="form-group">
+              <label for="subject" data-translate="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
             </div>
-            <div>
-              <h4 data-translate="phone2">Phone</h4>
-              <p>+62 851-4170-5154</p>
+            <div class="form-group">
+              <label for="message" data-translate="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
             </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div>
-              <h4 data-translate="location2">Location</h4>
-              <p>Makassar, Indonesia</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fab fa-linkedin"></i>
-            </div>
-            <div>
-              <h4 data-translate="linkedin">LinkedIn</h4>
-              <p>linkedin.com/in/muh-reza</p>
-            </div>
-          </div>
-        </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-translate="sendMessage"
+            >
+              Send Message
+            </button>
+          </form>
+          <div id="formMessage" class="form-message"></div>
+        </div> -->
       </div>
     </section>
 

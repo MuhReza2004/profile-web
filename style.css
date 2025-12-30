@@ -37,6 +37,17 @@ body {
   opacity: 0.1;
 }
 
+/* Particle Canvas */
+#particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
 .bg-animation::before {
   content: "";
   position: absolute;
@@ -560,5 +571,3 @@ body {
 .logo {
   text-shadow: 0 0 8px #ff00cc, 0 0 16px #00fff7;
 }
-
-

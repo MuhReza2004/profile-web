@@ -74,8 +74,8 @@ function setLanguage(lang) {
     }
   });
   document.documentElement.lang = lang;
-  const langSpan = languageBtn.querySelector('span');
-  if(langSpan) {
+  const langSpan = languageBtn.querySelector("span");
+  if (langSpan) {
     langSpan.textContent = lang.toUpperCase();
   }
 }
@@ -85,6 +85,68 @@ languageBtn.addEventListener("click", function () {
   setLanguage(currentLang);
 });
 
+// Particle Animation
+class Particle {
+  constructor(canvas) {
+    this.canvas = canvas;
+    this.ctx = canvas.getContext("2d");
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.vx = (Math.random() - 0.5) * 0.5;
+    this.vy = (Math.random() - 0.5) * 0.5;
+    this.size = Math.random() * 2 + 1;
+    this.opacity = Math.random() * 0.5 + 0.2;
+  }
+
+  update() {
+    this.x += this.vx;
+    this.y += this.vy;
+
+    if (this.x < 0 || this.x > this.canvas.width) this.vx *= -1;
+    if (this.y < 0 || this.y > this.canvas.height) this.vy *= -1;
+  }
+
+  draw() {
+    this.ctx.beginPath();
+    this.ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    this.ctx.fillStyle = `rgba(255, 0, 204, ${this.opacity})`;
+    this.ctx.fill();
+  }
+}
+
+function initParticles() {
+  const canvas = document.getElementById("particle-canvas");
+  const ctx = canvas.getContext("2d");
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+
+  resizeCanvas();
+  window.addEventListener("resize", resizeCanvas);
+
+  const particles = [];
+  const particleCount = 50;
+
+  for (let i = 0; i < particleCount; i++) {
+    particles.push(new Particle(canvas));
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    particles.forEach((particle) => {
+      particle.update();
+      particle.draw();
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+}
+
 // Add loading animation
 window.addEventListener("load", function () {
   document.body.style.opacity = "0";
@@ -92,7 +154,8 @@ window.addEventListener("load", function () {
   setTimeout(() => {
     document.body.style.opacity = "1";
   }, 100);
-  setLanguage('id'); // Set initial language to Indonesian
+  setLanguage("id"); // Set initial language to Indonesian
+  initParticles(); // Initialize particle animation
 });
 
 // Parallax effect for hero section
