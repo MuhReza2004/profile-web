@@ -32,6 +32,7 @@ const translations = {
     webExperience: "I have created several websites that you can see below:",
     visitWebsite: "Visit Website",
     comingSoon: "Coming SOON!",
+    private: "website is private!",
     bodyCheckDescription:
       "A simple BMI calculator built with HTML, CSS, and JavaScript that determines Body Mass Index and provides activity recommendations based on results.",
     animeList:
@@ -110,6 +111,7 @@ const translations = {
       "Saya telah membuat beberapa website yang dapat Anda lihat di bawah ini:",
     visitWebsite: "Kunjungi Website",
     comingSoon: "Segera Hadir!",
+    private: "Website bersifat rahasia!",
     bodyCheckDescription:
       "Kalkulator BMI sederhana yang dibuat dengan HTML, CSS, dan JavaScript yang menentukan Indeks Massa Tubuh dan memberikan rekomendasi aktivitas berdasarkan hasil.",
     animeList:
