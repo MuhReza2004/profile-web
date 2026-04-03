@@ -18,7 +18,7 @@ const translations = {
     contactMe: "Contact Me",
     socialMedia: "Social Media",
     allRights: "&copy; 2024 Muh Reza. All rights reserved.",
-    year: "2022 - Present",
+    year: "2022 - 2026",
     university: "Muslim University of Indonesia - Information Technology",
     teamwork: "Teamwork",
     communication: "Communication",

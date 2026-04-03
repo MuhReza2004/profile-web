@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -29,7 +29,7 @@
             <img src="assets/Background.png" alt="Logo MR" />
           </div>
         </div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
           <li><a href="#home" data-translate="home">Home</a></li>
           <li><a href="#about" data-translate="about">About</a></li>
           <li><a href="#skills" data-translate="skills">Skills</a></li>
@@ -47,6 +47,11 @@
             </button>
           </li>
         </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
 
@@ -151,7 +156,7 @@
               Education
             </h4>
             <p>
-              <strong data-translate="year">2022 - Present</strong><br />
+              <strong data-translate="year">2022 - 2026</strong><br />
               <span data-translate="university"
                 >Muslim University of Indonesia - Information Technology</span
               >
@@ -211,18 +216,18 @@
             </div>
           </div>
           <div class="skill-item">
-            <div class="skill-icon"><i class="fab fa-php"></i></div>
+            <div class="skill-icon"><i class="fas fa-rocket"></i></div>
             <div class="skill-info">
-              <span>PHP</span>
+              <span>Vite</span>
               <div class="progress-bar">
                 <div class="progress-fill" style="width: 80%"></div>
               </div>
             </div>
           </div>
           <div class="skill-item">
-            <div class="skill-icon"><i class="fab fa-react"></i></div>
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
             <div class="skill-info">
-              <span>React</span>
+              <span>TypeScript</span>
               <div class="progress-bar">
                 <div class="progress-fill" style="width: 75%"></div>
               </div>
@@ -234,15 +239,6 @@
               <span>Next.js</span>
               <div class="progress-bar">
                 <div class="progress-fill" style="width: 70%"></div>
-              </div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fab fa-laravel"></i></div>
-            <div class="skill-info">
-              <span>Laravel</span>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 75%"></div>
               </div>
             </div>
           </div>
@@ -330,87 +326,97 @@
     </section>
 
     <!-- Achievements Section -->
-    <!-- <section class="section" id="achievements">
+    <section class="section" id="achievements">
       <h2 class="section-title" data-translate="achievements">Achievements</h2>
       <div class="achievements-grid">
-        <div class="achievement-card">
+        <div class="achievement-card" data-counter="8">
           <div class="achievement-icon">
             <i class="fas fa-trophy"></i>
           </div>
           <h3 data-translate="completedProjects">Completed Projects</h3>
-          <p class="achievement-number">8+</p>
+          <p class="achievement-number" data-target="8">0</p>
           <p data-translate="projectsDescription">
             Web applications and websites built with modern technologies
           </p>
         </div>
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-counter="10000">
           <div class="achievement-icon">
             <i class="fas fa-code"></i>
           </div>
           <h3 data-translate="linesOfCode">Lines of Code</h3>
-          <p class="achievement-number">10K+</p>
+          <p class="achievement-number" data-target="10000">0</p>
           <p data-translate="codeDescription">
             Clean, efficient, and maintainable code written
           </p>
         </div>
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-counter="15">
           <div class="achievement-icon">
             <i class="fas fa-users"></i>
           </div>
           <h3 data-translate="happyClients">Happy Clients</h3>
-          <p class="achievement-number">15+</p>
+          <p class="achievement-number" data-target="15">0</p>
           <p data-translate="clientsDescription">
             Satisfied clients from various projects and collaborations
           </p>
         </div>
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-counter="5">
           <div class="achievement-icon">
             <i class="fas fa-graduation-cap"></i>
           </div>
           <h3 data-translate="certifications">Certifications</h3>
-          <p class="achievement-number">5+</p>
+          <p class="achievement-number" data-target="2">0</p>
           <p data-translate="certificationsDescription">
             Professional certifications in web development and design
           </p>
         </div>
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-counter="2">
           <div class="achievement-icon">
             <i class="fas fa-clock"></i>
           </div>
           <h3 data-translate="experience">Years of Experience</h3>
-          <p class="achievement-number">2+</p>
+          <p class="achievement-number" data-target="3">0</p>
           <p data-translate="experienceDescription">
             Years of hands-on experience in web development
           </p>
         </div>
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-counter="15">
           <div class="achievement-icon">
             <i class="fas fa-globe"></i>
           </div>
           <h3 data-translate="technologies">Technologies Mastered</h3>
-          <p class="achievement-number">15+</p>
+          <p class="achievement-number" data-target="15">0</p>
           <p data-translate="technologiesDescription">
             Modern web technologies and frameworks learned
           </p>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- Projects Section -->
     <section class="section" id="projects">
       <h2 class="section-title" data-translate="myProjects">My Projects</h2>
       <div class="projects-grid">
-        <div class="project-card">
+        <div class="project-card" data-modal="bodycheck">
           <div class="project-image">
-            <img src="assets/bmi.png" alt="" />
+            <img src="assets/bmi.png" alt="Body Check" />
+            <div class="project-overlay">
+              <button class="project-view-btn" onclick="openModal('bodycheck')">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
           </div>
           <div class="project-content">
             <h3 class="project-title">Body Check</h3>
+            <div class="project-tags">
+              <span class="tag html">HTML</span>
+              <span class="tag css">CSS</span>
+              <span class="tag js">JavaScript</span>
+            </div>
             <p
               class="project-description"
               data-translate="bodyCheckDescription"
@@ -438,8 +444,13 @@
           </div>
           <div class="project-content">
             <h3 class="project-title">Anime List</h3>
+            <div class="project-tags">
+              <span class="tag react">React</span>
+              <span class="tag vite">Vite</span>
+              <span class="tag js">JavaScript</span>
+            </div>
             <p class="project-description" data-translate="animeList">
-              A Next.js application that implements a public API to display
+              A React application that implements a public API to display
               available anime. Built following modern React practices and
               responsive design.
             </p>
@@ -462,6 +473,11 @@
           </div>
           <div class="project-content">
             <h3 class="project-title">MentorMe</h3>
+            <div class="project-tags">
+              <span class="tag react">React</span>
+              <span class="tag vite">Vite</span>
+              <span class="tag js">JavaScript</span>
+            </div>
             <p class="project-description" data-translate="mentorMe">
               MentorMe is a learning platform that connects students with
               mentors through 1:1 sessions and real-world projects to build
@@ -486,6 +502,11 @@
           </div>
           <div class="project-content">
             <h3 class="project-title">Si Kecil Cerdas</h3>
+            <div class="project-tags">
+              <span class="tag html">HTML</span>
+              <span class="tag css">CSS</span>
+              <span class="tag js">JavaScript</span>
+            </div>
             <p class="project-description" data-translate="siKecilCerdas">
               A website providing child stimulation recommendations appropriate
               for children aged 0-24 months. Helps parents with early childhood
@@ -510,6 +531,11 @@
           </div>
           <div class="project-content">
             <h3 class="project-title">HowMany</h3>
+            <div class="project-tags">
+              <span class="tag html">HTML</span>
+              <span class="tag css">CSS</span>
+              <span class="tag js">JavaScript</span>
+            </div>
             <p class="project-description" data-translate="howMany">
               A web application that helps users track their daily water intake
               and stay hydrated. Built with a user-friendly interface and
@@ -534,6 +560,11 @@
           </div>
           <div class="project-content">
             <h3 class="project-title">Kalku Sehat</h3>
+            <div class="project-tags">
+              <span class="tag html">HTML</span>
+              <span class="tag css">CSS</span>
+              <span class="tag js">JavaScript</span>
+            </div>
             <p class="project-description" data-translate="kalkuSehat">
               A web application that helps users calculate their daily calorie
               intake and provides personalized meal plans. Built with a
@@ -558,6 +589,11 @@
           </div>
           <div class="project-content">
             <h3 class="project-title">Health Diet</h3>
+            <div class="project-tags">
+              <span class="tag html">HTML</span>
+              <span class="tag css">CSS</span>
+              <span class="tag js">JavaScript</span>
+            </div>
             <p class="project-description" data-translate="healthDiet">
               A website providing personalized diet recommendations based on
               user's medical history, aimed at health-conscious individuals
@@ -581,6 +617,11 @@
           </div>
           <div class="project-content">
             <h3 class="project-title">Home Workers</h3>
+            <div class="project-tags">
+              <span class="tag react">React</span>
+              <span class="tag nextjs">Next.js</span>
+              <span class="tag typescript">TypeScript</span>
+            </div>
             <p class="project-description" data-translate="homeWorkers">
               Platform penyedia layanan service rumah tangga seperti service AC,
               elektronik, dan perbaikan rumah. Menghubungkan pelanggan dengan
@@ -590,7 +631,7 @@
             <div class="project-links">
               <a href="https://www.homeworkers.id/" class="project-link">
                 <i class="fas fa-tools"></i>
-                <span data-translate="comingSoon">Coming Soon</span>
+                <span data-translate="visitWebsite">Live Demo</span>
               </a>
             </div>
           </div>
@@ -600,14 +641,41 @@
             <img src="assets/stok.png" alt="" />
           </div>
           <div class="project-content">
-            <h3 class="project-title">Dashboard Management</h3>
+            <h3 class="project-title">Sembako32 Smart ERP</h3>
+            <div class="project-tags">
+              <span class="tag react">React</span>
+              <span class="tag nextjs">Next.js</span>
+              <span class="tag typescript">TypeScript</span>
+            </div>
             <p class="project-description" data-translate="homeWorkers">
-              dirancang untuk memudahkan pengelolaan inventori secara real-time.
-              Pengguna dapat memantau kondisi stok barang, menambahkan stok
-              baru, serta membuat dan mengelola transaksi dengan cepat. Setiap
-              transaksi dapat diperbarui statusnya secara fleksibel, sehingga
-              alur operasional menjadi lebih rapi, transparan, dan efisien.
+              Sistem dashboard admin berbasis web untuk mengoptimalkan
+              pengelolaan bisnis sembako secara digital dan efisien.
             </p>
+            <button class="read-more-btn" onclick="expandDescription(this)">
+              Read More
+            </button>
+            <div class="full-description" style="display: none">
+              <p
+                style="
+                  color: var(--text-secondary);
+                  margin-bottom: 1rem;
+                  line-height: 1.6;
+                "
+              >
+                Sistem RPK Sembako 32 adalah aplikasi dashboard admin berbasis
+                web yang dikembangkan untuk mengoptimalkan pengelolaan bisnis
+                sembako secara digital dan efisien. Sistem ini mengintegrasikan
+                berbagai proses penting seperti manajemen produk, supplier,
+                pelanggan, hingga kontrol stok dalam satu platform yang
+                terpusat. Dilengkapi dengan fitur transaksi end-to-end
+                (pembelian, penjualan, piutang, dan delivery order), aplikasi
+                ini mampu memberikan visibilitas penuh terhadap alur bisnis.
+                Dashboard interaktif menyajikan insight real-time terkait
+                performa usaha mulai dari pendapatan, pengeluaran, hingga
+                analisis keuntungan sehingga membantu pengambilan keputusan yang
+                lebih cepat dan tepat.
+              </p>
+            </div>
             <div class="project-links">
               <a href="#" class="project-link">
                 <i class="fas fa-tools"></i>
@@ -673,7 +741,7 @@
             </p>
           </div>
         </div>
-        <!-- <div class="contact-form-container">
+        <div class="contact-form-container">
           <form class="contact-form" id="contactForm">
             <div class="form-group">
               <label for="name" data-translate="name">Name</label>
@@ -705,9 +773,32 @@
             </button>
           </form>
           <div id="formMessage" class="form-message"></div>
-        </div> -->
+        </div>
       </div>
     </section>
+
+    <!-- Project Modals -->
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <button class="modal-close" id="modalClose">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img id="modalImage" src="" alt="" />
+          </div>
+          <div class="modal-description">
+            <p id="modalDesc"></p>
+            <div class="modal-tech" id="modalTech"></div>
+            <div class="modal-links" id="modalLinks"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer

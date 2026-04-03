@@ -203,6 +203,196 @@ document.querySelectorAll(".project-card").forEach((card) => {
 // Mobile menu toggle (for future mobile menu implementation)
 let mobileMenuOpen = false;
 
+// Mobile Menu Functionality
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+if (hamburger) {
+  hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+    mobileMenuOpen = !mobileMenuOpen;
+  });
+
+  // Close menu when clicking on a link
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", function () {
+      hamburger.classList.remove("active");
+      navLinks.classList.remove("active");
+      mobileMenuOpen = false;
+    });
+  });
+}
+
+// Modal Functionality
+function openModal(projectId) {
+  const modalOverlay = document.getElementById("modalOverlay");
+  const projects = {
+    bodycheck: {
+      title: "Body Check - BMI Calculator",
+      image: "assets/bmi.png",
+      description:
+        "A simple yet effective BMI calculator built with HTML, CSS, and JavaScript. This web application allows users to calculate their Body Mass Index and provides personalized activity recommendations based on their results.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://body-check-six.vercel.app/",
+        },
+        { text: "GitHub", url: "https://github.com/MuhReza2004/Body-Check" },
+      ],
+    },
+  };
+
+  const project = projects[projectId];
+  if (!project) return;
+
+  document.getElementById("modalTitle").textContent = project.title;
+  document.getElementById("modalImage").src = project.image;
+  document.getElementById("modalDesc").textContent = project.description;
+
+  const modalTech = document.getElementById("modalTech");
+  modalTech.innerHTML = project.technologies
+    .map((tech) => `<span class="tag">${tech}</span>`)
+    .join("");
+
+  const modalLinks = document.getElementById("modalLinks");
+  modalLinks.innerHTML = project.links
+    .map(
+      (link) =>
+        `<a href="${link.url}" target="_blank"><i class="fas fa-external-link-alt"></i> ${link.text}</a>`,
+    )
+    .join("");
+
+  modalOverlay.classList.add("active");
+}
+
+function closeModal() {
+  const modalOverlay = document.getElementById("modalOverlay");
+  modalOverlay.classList.remove("active");
+}
+
+const modalOverlay = document.getElementById("modalOverlay");
+const modalClose = document.getElementById("modalClose");
+
+if (modalClose) {
+  modalClose.addEventListener("click", closeModal);
+}
+
+if (modalOverlay) {
+  modalOverlay.addEventListener("click", function (e) {
+    if (e.target === this) {
+      closeModal();
+    }
+  });
+}
+
+// Achievement Counter Animation
+function animateCounter(element, target, duration = 2000) {
+  let current = 0;
+  const increment = target / (duration / 16);
+  const timer = setInterval(() => {
+    current += increment;
+    if (current >= target) {
+      current = target;
+      clearInterval(timer);
+    }
+    element.textContent = Math.floor(current).toLocaleString();
+  }, 16);
+}
+
+// Trigger achievement counters when section is visible
+const achievementObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && !entry.target.dataset.animated) {
+        entry.target.dataset.animated = "true";
+        document.querySelectorAll(".achievement-number").forEach((el) => {
+          const target = parseInt(el.dataset.target);
+          animateCounter(el, target);
+        });
+        achievementObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.3 },
+);
+
+const achievementsSection = document.querySelector(".achievements-grid");
+if (achievementsSection) {
+  achievementObserver.observe(achievementsSection);
+}
+
+// Contact Form Handling
+const contactForm = document.getElementById("contactForm");
+
+// Expand Description Function
+function expandDescription(btn) {
+  const projectContent = btn.closest(".project-content");
+  const description = projectContent.querySelector(".project-description");
+  const fullDesc = projectContent.querySelector(".full-description");
+
+  if (fullDesc.style.display === "none") {
+    fullDesc.style.display = "block";
+    description.style.display = "none";
+    btn.textContent = "Show Less";
+    btn.classList.add("active");
+  } else {
+    fullDesc.style.display = "none";
+    description.style.display = "-webkit-box";
+    btn.textContent = "Read More";
+    btn.classList.remove("active");
+  }
+}
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+    const formMessage = document.getElementById("formMessage");
+
+    // Validate form
+    if (!name || !email || !subject || !message) {
+      formMessage.textContent = "Please fill in all fields";
+      formMessage.className = "form-message error";
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      formMessage.textContent = "Please enter a valid email address";
+      formMessage.className = "form-message error";
+      return;
+    }
+
+    // Create mailto link
+    const mailtoLink = `mailto:muh.reza2441@gmail.com?subject=${encodeURIComponent(
+      subject,
+    )}&body=From: ${encodeURIComponent(name)} (${encodeURIComponent(
+      email,
+    )})%0A%0A${encodeURIComponent(message)}`;
+
+    // Show success message
+    formMessage.textContent =
+      "Message prepared! Your email client will open. Send it to finalize.";
+    formMessage.className = "form-message success";
+
+    // Open email client
+    window.location.href = mailtoLink;
+
+    // Reset form after delay
+    setTimeout(() => {
+      contactForm.reset();
+      formMessage.className = "form-message";
+      formMessage.textContent = "";
+    }, 2000);
+  });
+}
+
 // Add click effects to buttons
 document.querySelectorAll(".btn").forEach((btn) => {
   btn.addEventListener("click", function (e) {
