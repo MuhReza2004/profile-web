@@ -6,7 +6,7 @@ const translations = {
     projects: "Projects",
     contact: "Contact",
     aboutMe: "About me",
-    introduction: `Hi there! I'm a detail-oriented Web Developer and an Information Technology student at Universitas Muslim Indonesia since 2022.`,
+    introduction: `Hi there! I'm a detail-oriented Web Developer and an Informatics Engineering graduate (S.Kom.) from Universitas Muslim Indonesia. Microsoft Certified in Azure Data Fundamentals (DP-900).`,
     goal: `To challenge myself in new environments to learn, develop, and enhance my skills through various projects and contribute more with my abilities. I'm passionate about creating innovative web solutions that make a difference.`,
     softSkill: "Soft skill",
     technicalSkill: "Technical skill",
@@ -18,8 +18,11 @@ const translations = {
     contactMe: "Contact Me",
     socialMedia: "Social Media",
     allRights: "&copy; 2024 Muh Reza. All rights reserved.",
-    year: "2022 - 2026",
-    university: "Muslim University of Indonesia - Information Technology",
+    year: "2022 - 2026 · Graduated",
+    university:
+      "Muslim University of Indonesia - Informatics Engineering (S.Kom.)",
+    certAzure: "Microsoft Certified: Azure Data Fundamentals (DP-900)",
+    certAzureDesc: "MCF — Microsoft Certified Fundamentals",
     teamwork: "Teamwork",
     communication: "Communication",
     CriticalThinking: "Critical Thinking",
@@ -36,7 +39,7 @@ const translations = {
     bodyCheckDescription:
       "A simple BMI calculator built with HTML, CSS, and JavaScript that determines Body Mass Index and provides activity recommendations based on results.",
     animeList:
-      "A Next.js application that implements a public API to display available anime. Built following modern React practices and responsive design.",
+      "A React application that implements a public API to display available anime. Built following modern React practices and responsive design.",
     mobileApp:
       "This is a Mobile App currently under development using Flutter.",
     siKecilCerdas:
@@ -45,10 +48,10 @@ const translations = {
       "A website providing personalized diet recommendations based on user's medical history, aimed at health-conscious individuals seeking guidance.",
     home: "Home",
     language: "EN",
-    jobTitle: "Website Developer & IT Student",
+    jobTitle: "Website Developer — S.Kom.",
     viewMyWork: "View My Work",
     getInTouch: "Get In Touch",
-    jobTitle2: "Web Developer & IT Student",
+    jobTitle2: "Web Developer",
     myGoal: "My Goal",
     email: "Email",
     phone: "Phone",
@@ -78,6 +81,53 @@ const translations = {
       "Home service platform providing household maintenance services like AC repair, electronics, and home repairs. Connecting customers with trusted technicians for all home repair and maintenance needs.",
     bungaSri:
       "Official landing page of PT. Bunga Sri Rejeki Lestari, a property developer & contractor company with offices in Makassar and Kendari. Showcasing company profile, vision & mission, housing project portfolio, legal documents, and contact information.",
+    sembako32:
+      "Web-based admin dashboard system to optimize grocery store (sembako) business management digitally and efficiently.",
+    downloadCv: "Download CV",
+    testimonials: "Testimonials",
+    testimonial1:
+      "Fast delivery, communicative, and clean work. The frontend he built really helps our customers find and order services with ease.",
+    testimonial1Name: "Home Workers Team",
+    testimonial1Role: "Product Team",
+    testimonial2:
+      "The landing page looks professional and informative. Prospective buyers can now easily understand our housing projects and contact us directly via WhatsApp.",
+    testimonial2Name: "PT. Bunga Sri Rejeki Lestari",
+    testimonial2Role: "Property Developer",
+    testimonial3:
+      "The ERP dashboard changed the way we manage stock and transactions. All data is centralized and profit reports can be monitored anytime.",
+    testimonial3Name: "Sembako 32",
+    testimonial3Role: "Business Owner",
+    experienceTitle: "Experience",
+    expStudio: "Founder — NeoFormula Studio",
+    expStudioDesc:
+      "Building our own products under one roof: Home Workers (home services platform) and MentorMe (learning platform), currently in active development.",
+    expFreelance: "Freelance Web Developer",
+    expFreelanceDesc:
+      "2022 - Present · Building websites and web applications for real clients, from landing pages to full business dashboards.",
+    expClients: "Notable Client Projects",
+    expClientsDesc:
+      "Home Workers (home services platform) · PT. Bunga Sri Rejeki Lestari (property company landing page) · Sembako32 Smart ERP (business admin dashboard)",
+    name: "Name",
+    emailForm: "Email",
+    subject: "Subject",
+    message: "Message",
+    sendMessage: "Send Message",
+    achievements: "Achievements",
+    completedProjects: "Completed Projects",
+    projectsDescription:
+      "Web applications and websites built with modern technologies",
+    linesOfCode: "Lines of Code",
+    codeDescription: "Clean, efficient, and maintainable code written",
+    happyClients: "Happy Clients",
+    clientsDescription: "Satisfied clients from various projects and collaborations",
+    certifications: "Certifications",
+    certificationsDescription:
+      "Professional certifications including Azure Data Fundamentals (DP-900)",
+    experience: "Years of Experience",
+    experienceDescription: "Years of hands-on experience in web development",
+    technologies: "Technologies Mastered",
+    technologiesDescription:
+      "Modern web technologies and frameworks learned",
   },
   id: {
     about: "Tentang",
@@ -86,7 +136,7 @@ const translations = {
     projects: "Proyek",
     contact: "Kontak",
     aboutMe: "Tentang Saya",
-    introduction: `Halo! Saya adalah seorang Web Developer yang berorientasi pada detail dan juga mahasiswa Teknologi Informasi di Universitas Muslim Indonesia sejak 2022.`,
+    introduction: `Halo! Saya adalah seorang Web Developer yang berorientasi pada detail, lulusan Teknik Informatika Universitas Muslim Indonesia (S.Kom.), dan tersertifikasi Azure Data Fundamentals (DP-900).`,
     goal: `Menantang diri saya di lingkungan baru untuk belajar, berkembang, dan meningkatkan keterampilan saya melalui berbagai proyek dan berkontribusi lebih banyak dengan kemampuan saya. Saya bersemangat dalam menciptakan solusi web inovatif yang membuat perbedaan.`,
     softSkill: "Kemampuan Lunak",
     technicalSkill: "Kemampuan Teknis",
@@ -98,8 +148,11 @@ const translations = {
     contactMe: "Hubungi Saya",
     socialMedia: "Media Sosial",
     allRights: "&copy; 2024 Muh Reza. Seluruh hak cipta dilindungi.",
-    year: "2022 - Sekarang",
-    university: "Universitas Muslim Indonesia - Teknologi Informasi",
+    year: "2022 - 2026 · Lulus",
+    university:
+      "Universitas Muslim Indonesia - Teknik Informatika (S.Kom.)",
+    certAzure: "Microsoft Certified: Azure Data Fundamentals (DP-900)",
+    certAzureDesc: "MCF — Microsoft Certified Fundamentals",
     teamwork: "Kerja Tim",
     communication: "Komunikasi",
     CriticalThinking: "Berpikir Kritis",
@@ -126,10 +179,10 @@ const translations = {
       "Situs web yang memberikan rekomendasi diet yang dipersonalisasi berdasarkan riwayat kesehatan pengguna, ditujukan untuk individu yang sadar kesehatan yang mencari bimbingan.",
     home: "Beranda",
     language: "ID",
-    jobTitle: "Pengembang Situs Web & Mahasiswa TI",
+    jobTitle: "Pengembang Web — S.Kom.",
     viewMyWork: "Lihat Pekerjaan Saya",
     getInTouch: "Hubungi",
-    jobTitle2: "Pengembang Situs Web & Mahasiswa TI",
+    jobTitle2: "Pengembang Web",
     myGoal: "Tujuan Saya",
     email: "Email",
     phone: "Telepon",
@@ -165,7 +218,7 @@ const translations = {
     clientsDescription: "Klien puas dari berbagai proyek dan kolaborasi",
     certifications: "Sertifikasi",
     certificationsDescription:
-      "Sertifikasi profesional dalam pengembangan web dan desain",
+      "Sertifikasi profesional termasuk Azure Data Fundamentals (DP-900)",
     experience: "Tahun Pengalaman",
     experienceDescription: "Tahun pengalaman langsung dalam pengembangan web",
     technologies: "Teknologi Dikuasai",
@@ -173,5 +226,38 @@ const translations = {
       "Teknologi web modern dan framework yang dipelajari",
     bungaSri:
       "Landing page resmi PT. Bunga Sri Rejeki Lestari, perusahaan developer properti & kontraktor dengan kantor di Makassar dan Kendari. Menampilkan profil perusahaan, visi & misi, portofolio proyek perumahan, legalitas, dan kontak.",
+    sembako32:
+      "Sistem dashboard admin berbasis web untuk mengoptimalkan pengelolaan bisnis sembako secara digital dan efisien.",
+    downloadCv: "Unduh CV",
+    testimonials: "Testimoni",
+    testimonial1:
+      "Pengerjaan cepat, komunikatif, dan hasilnya rapi. Frontend yang dibangun sangat membantu pelanggan kami menemukan dan memesan layanan dengan mudah.",
+    testimonial1Name: "Tim Home Workers",
+    testimonial1Role: "Product Team",
+    testimonial2:
+      "Landing page-nya profesional dan informatif. Calon pembeli kini lebih mudah memahami proyek perumahan kami dan langsung menghubungi lewat WhatsApp.",
+    testimonial2Name: "PT. Bunga Sri Rejeki Lestari",
+    testimonial2Role: "Property Developer",
+    testimonial3:
+      "Dashboard ERP-nya mengubah cara kami mengelola stok dan transaksi. Semua data terpusat dan laporan keuntungan bisa dipantau kapan saja.",
+    testimonial3Name: "Sembako 32",
+    testimonial3Role: "Business Owner",
+    experienceTitle: "Pengalaman",
+    expStudio: "Pendiri — NeoFormula Studio",
+    expStudioDesc:
+      "Membangun produk sendiri dalam satu naungan: Home Workers (platform layanan rumah tangga) dan MentorMe (platform pembelajaran), saat ini dalam tahap pengembangan aktif.",
+    expFreelance: "Web Developer Freelance",
+    expFreelanceDesc:
+      "2022 - Sekarang &middot; Membangun website dan aplikasi web untuk klien nyata, dari landing page hingga dashboard bisnis yang lengkap.",
+    expClients: "Proyek Klien Utama",
+    expClientsDesc:
+      "Home Workers (platform layanan rumah tangga) &middot; PT. Bunga Sri Rejeki Lestari (landing page perusahaan properti) &middot; Sembako32 Smart ERP (dashboard admin bisnis)",
+    homeWorkers:
+      "Platform penyedia layanan service rumah tangga seperti service AC, elektronik, dan perbaikan rumah. Menghubungkan pelanggan dengan teknisi terpercaya untuk kebutuhan perbaikan dan pemeliharaan rumah.",
+    name: "Nama",
+    emailForm: "Email",
+    subject: "Subjek",
+    message: "Pesan",
+    sendMessage: "Kirim Pesan",
   },
 };

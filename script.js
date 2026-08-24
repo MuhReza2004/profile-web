@@ -78,6 +78,13 @@ function setLanguage(lang) {
   if (langSpan) {
     langSpan.textContent = lang.toUpperCase();
   }
+  const cvBtn = document.getElementById("cvDownload");
+  if (cvBtn) {
+    const cvFile =
+      lang === "id" ? "CV-Muh-Reza-ID.pdf" : "CV-Muh-Reza-EN.pdf";
+    cvBtn.href = `assets/${cvFile}`;
+    cvBtn.setAttribute("download", cvFile);
+  }
 }
 
 languageBtn.addEventListener("click", function () {
@@ -228,103 +235,11 @@ if (hamburger) {
 function openModal(projectId) {
   const modalOverlay = document.getElementById("modalOverlay");
   const projects = {
-    bodycheck: {
-      title: "Body Check - BMI Calculator",
-      image: "assets/bmi.png",
-      description:
-        "A simple yet effective BMI calculator built with HTML, CSS, and JavaScript. This web application allows users to calculate their Body Mass Index and provides personalized activity recommendations based on their results.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      links: [
-        {
-          text: "Visit Project",
-          url: "https://body-check-six.vercel.app/",
-        },
-        { text: "GitHub", url: "https://github.com/MuhReza2004/Body-Check" },
-      ],
-    },
-    animelist: {
-      title: "Anime List",
-      image: "assets/website1.png",
-      description:
-        "A React application that implements a public API to display available anime. Built following modern React practices and responsive design.",
-      technologies: ["React", "Vite", "JavaScript"],
-      links: [
-        {
-          text: "Visit Project",
-          url: "https://reza-anime-list.vercel.app/",
-        },
-      ],
-    },
-    mentorme: {
-      title: "MentorMe",
-      image: "assets/mentorme1.png",
-      description:
-        "MentorMe is a learning platform that connects students with mentors through 1:1 sessions and real-world projects to build digital skills and industry-ready portfolios.",
-      technologies: ["React", "Vite", "JavaScript"],
-      links: [
-        {
-          text: "Visit Project",
-          url: "https://mentorme-web-mentor.vercel.app/",
-        },
-      ],
-    },
-    sikecilcerdas: {
-      title: "Si Kecil Cerdas",
-      image: "assets/sikecil.png",
-      description:
-        "A website providing child stimulation recommendations appropriate for children aged 0-24 months. Helps parents with early childhood development.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      links: [
-        {
-          text: "Visit Project",
-          url: "https://si-kecil-cerdas.vercel.app/",
-        },
-      ],
-    },
-    howmany: {
-      title: "HowMany - Water Intake Tracker",
-      image: "assets/howmany.png",
-      description:
-        "A web application that helps users track their daily water intake and stay hydrated. Built with a user-friendly interface and responsive design.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      links: [
-        {
-          text: "Visit Project",
-          url: "https://how-many-nine.vercel.app/calculator.html",
-        },
-      ],
-    },
-    kalkusehat: {
-      title: "Kalku Sehat - Calorie Calculator",
-      image: "assets/kalkusehat.png",
-      description:
-        "A web application that helps users calculate their daily calorie intake and provides personalized meal plans. Built with a user-friendly interface and responsive design.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      links: [
-        {
-          text: "Visit Project",
-          url: "https://kalku-sehat.vercel.app/",
-        },
-      ],
-    },
-    healthdiet: {
-      title: "Health Diet",
-      image: "assets/diet.png",
-      description:
-        "A website providing personalized diet recommendations based on user's medical history, aimed at health-conscious individuals seeking guidance.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      links: [
-        {
-          text: "Visit Project",
-          url: "https://healtdiet.vercel.app/",
-        },
-      ],
-    },
     homeworkers: {
       title: "Home Workers",
-      image: "assets/homeworkers.png",
+      image: "assets/homeworkers.webp",
       description:
-        "Platform penyedia layanan service rumah tangga seperti service AC, elektronik, dan perbaikan rumah. Menghubungkan pelanggan dengan teknisi terpercaya untuk kebutuhan perbaikan dan pemeliharaan rumah.",
+        "Platform penyedia layanan service rumah tangga seperti service AC, elektronik, dan perbaikan rumah. Saya membangun frontend aplikasi ini dari desain hingga produksi menggunakan Next.js dan TypeScript, mencakup halaman layanan, pemesanan, dan profil teknisi. Proyek komersial yang telah live dan digunakan oleh pelanggan nyata.",
       technologies: ["React", "Next.js", "TypeScript"],
       links: [
         {
@@ -333,24 +248,133 @@ function openModal(projectId) {
         },
       ],
     },
-    sembako32: {
-      title: "Sembako32 Smart ERP",
-      image: "assets/stok.png",
-      description:
-        "Sistem RPK Sembako 32 adalah aplikasi dashboard admin berbasis web yang dikembangkan untuk mengoptimalkan pengelolaan bisnis sembako secara digital dan efisien. Sistem ini mengintegrasikan berbagai proses penting seperti manajemen produk, supplier, pelanggan, hingga kontrol stok dalam satu platform yang terpusat. Dilengkapi dengan fitur transaksi end-to-end (pembelian, penjualan, piutang, dan delivery order), aplikasi ini mampu memberikan visibilitas penuh terhadap alur bisnis. Dashboard interaktif menyajikan insight real-time terkait performa usaha mulai dari pendapatan, pengeluaran, hingga analisis keuntungan sehingga membantu pengambilan keputusan yang lebih cepat dan tepat.",
-      technologies: ["React", "Next.js", "TypeScript"],
-      links: [],
-    },
     bungasri: {
       title: "Bunga Sri Rejeki Lestari",
-      image: "assets/Bungasri.png",
+      image: "assets/Bungasri.webp",
       description:
-        "Landing page resmi PT. Bunga Sri Rejeki Lestari, perusahaan developer properti & kontraktor yang telah berdiri sejak 2005 dengan kantor pusat di Makassar dan cabang di Kendari. Website ini menampilkan profil perusahaan, visi & misi, portofolio proyek perumahan (4000+ unit terbangun), legalitas perusahaan, serta informasi kontak lengkap dengan integrasi WhatsApp.",
+        "Landing page resmi PT. Bunga Sri Rejeki Lestari, perusahaan developer properti & kontraktor sejak 2005 dengan kantor pusat di Makassar dan cabang di Kendari. Dibangun dengan Next.js dan Tailwind CSS, menampilkan profil perusahaan, visi & misi, portofolio 4000+ unit perumahan, legalitas perusahaan, serta integrasi WhatsApp untuk memudahkan calon pembeli menghubungi tim marketing.",
       technologies: ["React", "Next.js", "TypeScript"],
       links: [
         {
           text: "Visit Project",
           url: "https://bunga-sri-rejeki-lestari.vercel.app/",
+        },
+      ],
+    },
+    sembako32: {
+      title: "Sembako32 Smart ERP",
+      image: "assets/erp.webp",
+      description:
+        "Aplikasi dashboard admin berbasis web untuk mengoptimalkan pengelolaan bisnis sembako secara digital dan efisien. Sistem mengintegrasikan manajemen produk, supplier, pelanggan, dan kontrol stok dalam satu platform terpusat, lengkap dengan transaksi end-to-end (pembelian, penjualan, piutang, delivery order). Dashboard interaktif menyajikan insight real-time pendapatan, pengeluaran, dan analisis keuntungan untuk pengambilan keputusan yang lebih cepat.",
+      technologies: ["React", "Next.js", "TypeScript"],
+      links: [
+        { text: "GitHub", url: "https://github.com/MuhReza2004/sembako32" },
+      ],
+    },
+    bodycheck: {
+      title: "Body Check - BMI Calculator",
+      image: "assets/bmi.webp",
+      description:
+        "Kalkulator BMI (Body Mass Index) yang dibangun dengan HTML, CSS, dan JavaScript murni. Pengguna memasukkan tinggi dan berat badan untuk mendapatkan kategori BMI beserta rekomendasi aktivitas yang dipersonalisasi berdasarkan hasilnya. Fokus pada logika perhitungan yang akurat dan antarmuka yang sederhana serta mudah digunakan.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://body-check-six.vercel.app/",
+        },
+        { text: "GitHub", url: "https://github.com/MuhReza2004/bmi" },
+      ],
+    },
+    animelist: {
+      title: "Anime List",
+      image: "assets/website1.webp",
+      description:
+        "Aplikasi React yang mengonsumsi API publik Jikan untuk menampilkan katalog anime. Menerapkan praktik React modern seperti custom hooks, state management, dan desain responsif. Proyek ini memperkuat pemahaman saya dalam integrasi API eksternal, handling loading/error states, dan rendering list data yang efisien.",
+      technologies: ["React", "Vite", "JavaScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://reza-anime-list.vercel.app/",
+        },
+        { text: "GitHub", url: "https://github.com/MuhReza2004/RezaAnimeList" },
+      ],
+    },
+    mentorme: {
+      title: "MentorMe",
+      image: "assets/mentorme1.webp",
+      description:
+        "Platform pembelajaran yang menghubungkan siswa dengan mentor melalui sesi 1:1 dan proyek dunia nyata untuk membangun keterampilan digital dan portofolio siap industri. Saya mengerjakan sisi mentor aplikasi ini menggunakan React dan Vite, mencakup alur registrasi mentor, manajemen sesi, dan profil keahlian.",
+      technologies: ["React", "Vite", "JavaScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://mentorme-web-mentor.vercel.app/",
+        },
+        {
+          text: "GitHub",
+          url: "https://github.com/MuhReza2004/mentorme-mentor",
+        },
+      ],
+    },
+    sikecilcerdas: {
+      title: "Si Kecil Cerdas",
+      image: "assets/sikecil.webp",
+      description:
+        "Website penyedia rekomendasi stimulasi anak yang sesuai untuk usia 0-24 bulan. Dirancang untuk membantu orang tua memantau tumbuh kembang anak usia dini dengan konten yang mudah dipahami, dikemas dalam antarmuka ramah pengguna dan sepenuhnya responsif di berbagai perangkat.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://si-kecil-cerdas.vercel.app/",
+        },
+        { text: "GitHub", url: "https://github.com/MuhReza2004/website-5" },
+      ],
+    },
+    howmany: {
+      title: "HowMany - Water Intake Tracker",
+      image: "assets/howmany.webp",
+      description:
+        "Aplikasi web pelacak asupan air harian yang membantu pengguna tetap terhidrasi. Dilengkapi kalkulator kebutuhan air berdasarkan profil pengguna dan visualisasi progres harian. Dibangun dengan JavaScript murni dengan fokus pada persistensi data lokal dan pengalaman pengguna yang menyenangkan.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://how-many-nine.vercel.app/calculator.html",
+        },
+        {
+          text: "GitHub",
+          url: "https://github.com/MuhReza2004/hitung-kalori",
+        },
+      ],
+    },
+    kalkusehat: {
+      title: "Kalku Sehat - Calorie Calculator",
+      image: "assets/kalkusehat.webp",
+      description:
+        "Aplikasi web yang membantu pengguna menghitung kebutuhan kalori harian berdasarkan data tubuh dan tingkat aktivitas, lalu merekomendasikan rencana makan yang dipersonalisasi. Implementasi mencakup perhitungan BMR/TDEE dan penyajian hasil yang mudah dipahami pengguna awam.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://kalku-sehat.vercel.app/",
+        },
+        { text: "GitHub", url: "https://github.com/MuhReza2004/kalku-sehat" },
+      ],
+    },
+    healthdiet: {
+      title: "Health Diet",
+      image: "assets/diet.webp",
+      description:
+        "Website pemberi rekomendasi diet yang dipersonalisasi berdasarkan riwayat medis pengguna. Ditujukan bagi individu sadar kesehatan yang membutuhkan panduan pola makan, dengan alur input kondisi kesehatan yang sederhana dan hasil rekomendasi yang relevan.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://healtdiet.vercel.app/",
+        },
+        {
+          text: "GitHub",
+          url: "https://github.com/MuhReza2004/rekomendasi-diet",
         },
       ],
     },
@@ -398,6 +422,12 @@ if (modalOverlay) {
     }
   });
 }
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && modalOverlay.classList.contains("active")) {
+    closeModal();
+  }
+});
 
 // Achievement Counter Animation
 function animateCounter(element, target, duration = 2000) {
