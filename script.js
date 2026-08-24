@@ -242,6 +242,118 @@ function openModal(projectId) {
         { text: "GitHub", url: "https://github.com/MuhReza2004/Body-Check" },
       ],
     },
+    animelist: {
+      title: "Anime List",
+      image: "assets/website1.png",
+      description:
+        "A React application that implements a public API to display available anime. Built following modern React practices and responsive design.",
+      technologies: ["React", "Vite", "JavaScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://reza-anime-list.vercel.app/",
+        },
+      ],
+    },
+    mentorme: {
+      title: "MentorMe",
+      image: "assets/mentorme1.png",
+      description:
+        "MentorMe is a learning platform that connects students with mentors through 1:1 sessions and real-world projects to build digital skills and industry-ready portfolios.",
+      technologies: ["React", "Vite", "JavaScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://mentorme-web-mentor.vercel.app/",
+        },
+      ],
+    },
+    sikecilcerdas: {
+      title: "Si Kecil Cerdas",
+      image: "assets/sikecil.png",
+      description:
+        "A website providing child stimulation recommendations appropriate for children aged 0-24 months. Helps parents with early childhood development.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://si-kecil-cerdas.vercel.app/",
+        },
+      ],
+    },
+    howmany: {
+      title: "HowMany - Water Intake Tracker",
+      image: "assets/howmany.png",
+      description:
+        "A web application that helps users track their daily water intake and stay hydrated. Built with a user-friendly interface and responsive design.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://how-many-nine.vercel.app/calculator.html",
+        },
+      ],
+    },
+    kalkusehat: {
+      title: "Kalku Sehat - Calorie Calculator",
+      image: "assets/kalkusehat.png",
+      description:
+        "A web application that helps users calculate their daily calorie intake and provides personalized meal plans. Built with a user-friendly interface and responsive design.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://kalku-sehat.vercel.app/",
+        },
+      ],
+    },
+    healthdiet: {
+      title: "Health Diet",
+      image: "assets/diet.png",
+      description:
+        "A website providing personalized diet recommendations based on user's medical history, aimed at health-conscious individuals seeking guidance.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://healtdiet.vercel.app/",
+        },
+      ],
+    },
+    homeworkers: {
+      title: "Home Workers",
+      image: "assets/homeworkers.png",
+      description:
+        "Platform penyedia layanan service rumah tangga seperti service AC, elektronik, dan perbaikan rumah. Menghubungkan pelanggan dengan teknisi terpercaya untuk kebutuhan perbaikan dan pemeliharaan rumah.",
+      technologies: ["React", "Next.js", "TypeScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://www.homeworkers.id/",
+        },
+      ],
+    },
+    sembako32: {
+      title: "Sembako32 Smart ERP",
+      image: "assets/stok.png",
+      description:
+        "Sistem RPK Sembako 32 adalah aplikasi dashboard admin berbasis web yang dikembangkan untuk mengoptimalkan pengelolaan bisnis sembako secara digital dan efisien. Sistem ini mengintegrasikan berbagai proses penting seperti manajemen produk, supplier, pelanggan, hingga kontrol stok dalam satu platform yang terpusat. Dilengkapi dengan fitur transaksi end-to-end (pembelian, penjualan, piutang, dan delivery order), aplikasi ini mampu memberikan visibilitas penuh terhadap alur bisnis. Dashboard interaktif menyajikan insight real-time terkait performa usaha mulai dari pendapatan, pengeluaran, hingga analisis keuntungan sehingga membantu pengambilan keputusan yang lebih cepat dan tepat.",
+      technologies: ["React", "Next.js", "TypeScript"],
+      links: [],
+    },
+    bungasri: {
+      title: "Bunga Sri Rejeki Lestari",
+      image: "assets/Bungasri.png",
+      description:
+        "Landing page resmi PT. Bunga Sri Rejeki Lestari, perusahaan developer properti & kontraktor yang telah berdiri sejak 2005 dengan kantor pusat di Makassar dan cabang di Kendari. Website ini menampilkan profil perusahaan, visi & misi, portofolio proyek perumahan (4000+ unit terbangun), legalitas perusahaan, serta informasi kontak lengkap dengan integrasi WhatsApp.",
+      technologies: ["React", "Next.js", "TypeScript"],
+      links: [
+        {
+          text: "Visit Project",
+          url: "https://bunga-sri-rejeki-lestari.vercel.app/",
+        },
+      ],
+    },
   };
 
   const project = projects[projectId];

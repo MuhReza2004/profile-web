@@ -108,7 +108,7 @@
               <a href="https://linkedin.com/in/muh-reza" class="social-link">
                 <i class="fab fa-linkedin"></i>
               </a>
-              <a href="https://instagram.com/reezaaa_12" class="social-link">
+              <a href="https://www.instagram.com/mhmmdrrreza/" class="social-link">
                 <i class="fab fa-instagram"></i>
               </a>
               <a href="https://github.com/MuhReza2004" class="social-link">
@@ -438,9 +438,17 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-modal="animelist">
           <div class="project-image">
             <img src="assets/website1.png" alt="" />
+            <div class="project-overlay">
+              <button
+                class="project-view-btn"
+                onclick="openModal('animelist')"
+              >
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
           </div>
           <div class="project-content">
             <h3 class="project-title">Anime List</h3>
@@ -467,9 +475,17 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-modal="mentorme">
           <div class="project-image">
             <img src="assets/mentorme1.png" alt="" />
+            <div class="project-overlay">
+              <button
+                class="project-view-btn"
+                onclick="openModal('mentorme')"
+              >
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
           </div>
           <div class="project-content">
             <h3 class="project-title">MentorMe</h3>
@@ -496,9 +512,17 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-modal="sikecilcerdas">
           <div class="project-image">
             <img src="assets/sikecil.png" alt="" />
+            <div class="project-overlay">
+              <button
+                class="project-view-btn"
+                onclick="openModal('sikecilcerdas')"
+              >
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
           </div>
           <div class="project-content">
             <h3 class="project-title">Si Kecil Cerdas</h3>
@@ -525,9 +549,17 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-modal="howmany">
           <div class="project-image">
             <img src="assets/howmany.png" alt="" />
+            <div class="project-overlay">
+              <button
+                class="project-view-btn"
+                onclick="openModal('howmany')"
+              >
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
           </div>
           <div class="project-content">
             <h3 class="project-title">HowMany</h3>
@@ -554,9 +586,17 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-modal="kalkusehat">
           <div class="project-image">
             <img src="assets/kalkusehat.png" alt="" />
+            <div class="project-overlay">
+              <button
+                class="project-view-btn"
+                onclick="openModal('kalkusehat')"
+              >
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
           </div>
           <div class="project-content">
             <h3 class="project-title">Kalku Sehat</h3>
@@ -583,9 +623,17 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-modal="healthdiet">
           <div class="project-image">
             <img src="assets/diet.png" alt="" />
+            <div class="project-overlay">
+              <button
+                class="project-view-btn"
+                onclick="openModal('healthdiet')"
+              >
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
           </div>
           <div class="project-content">
             <h3 class="project-title">Health Diet</h3>
@@ -611,9 +659,17 @@
             </div>
           </div>
         </div>
-        <div class="project-card">
+        <div class="project-card" data-modal="homeworkers">
           <div class="project-image">
             <img src="assets/homeworkers.png" alt="" />
+            <div class="project-overlay">
+              <button
+                class="project-view-btn"
+                onclick="openModal('homeworkers')"
+              >
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
           </div>
           <div class="project-content">
             <h3 class="project-title">Home Workers</h3>
@@ -629,16 +685,24 @@
               rumah.
             </p>
             <div class="project-links">
-              <a href="https://www.homeworkers.id/" class="project-link">
+              <a href="https://home-workers.vercel.app/" class="project-link">
                 <i class="fas fa-tools"></i>
                 <span data-translate="visitWebsite">Live Demo</span>
               </a>
             </div>
           </div>
         </div>
-        <div class="project-card">
+        <div class="project-card" data-modal="sembako32">
           <div class="project-image">
             <img src="assets/stok.png" alt="" />
+            <div class="project-overlay">
+              <button
+                class="project-view-btn"
+                onclick="openModal('sembako32')"
+              >
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
           </div>
           <div class="project-content">
             <h3 class="project-title">Sembako32 Smart ERP</h3>
@@ -651,35 +715,48 @@
               Sistem dashboard admin berbasis web untuk mengoptimalkan
               pengelolaan bisnis sembako secara digital dan efisien.
             </p>
-            <button class="read-more-btn" onclick="expandDescription(this)">
-              Read More
-            </button>
-            <div class="full-description" style="display: none">
-              <p
-                style="
-                  color: var(--text-secondary);
-                  margin-bottom: 1rem;
-                  line-height: 1.6;
-                "
-              >
-                Sistem RPK Sembako 32 adalah aplikasi dashboard admin berbasis
-                web yang dikembangkan untuk mengoptimalkan pengelolaan bisnis
-                sembako secara digital dan efisien. Sistem ini mengintegrasikan
-                berbagai proses penting seperti manajemen produk, supplier,
-                pelanggan, hingga kontrol stok dalam satu platform yang
-                terpusat. Dilengkapi dengan fitur transaksi end-to-end
-                (pembelian, penjualan, piutang, dan delivery order), aplikasi
-                ini mampu memberikan visibilitas penuh terhadap alur bisnis.
-                Dashboard interaktif menyajikan insight real-time terkait
-                performa usaha mulai dari pendapatan, pengeluaran, hingga
-                analisis keuntungan sehingga membantu pengambilan keputusan yang
-                lebih cepat dan tepat.
-              </p>
-            </div>
             <div class="project-links">
               <a href="#" class="project-link">
                 <i class="fas fa-tools"></i>
                 <span data-translate="private">Coming Soon</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-modal="bungasri">
+          <div class="project-image">
+            <img src="assets/Bungasri.png" alt="" />
+            <div class="project-overlay">
+              <button
+                class="project-view-btn"
+                onclick="openModal('bungasri')"
+              >
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Bunga Sri Rejeki Lestari</h3>
+            <div class="project-tags">
+              <span class="tag react">React</span>
+              <span class="tag nextjs">Next.js</span>
+              <span class="tag typescript">TypeScript</span>
+            </div>
+            <p class="project-description" data-translate="bungaSri">
+              Landing page resmi PT. Bunga Sri Rejeki Lestari, perusahaan
+              developer properti & kontraktor dengan kantor di Makassar dan
+              Kendari. Menampilkan profil perusahaan, visi & misi,
+              portofolio proyek perumahan, legalitas, dan kontak.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://bunga-sri-rejeki-lestari.vercel.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i>
+                <span data-translate="visitWebsite">Live Demo</span>
               </a>
             </div>
           </div>

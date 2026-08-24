@@ -76,6 +76,8 @@ const translations = {
     linkedin: "LinkedIn",
     homeWorkers:
       "Home service platform providing household maintenance services like AC repair, electronics, and home repairs. Connecting customers with trusted technicians for all home repair and maintenance needs.",
+    bungaSri:
+      "Official landing page of PT. Bunga Sri Rejeki Lestari, a property developer & contractor company with offices in Makassar and Kendari. Showcasing company profile, vision & mission, housing project portfolio, legal documents, and contact information.",
   },
   id: {
     about: "Tentang",
@@ -169,5 +171,7 @@ const translations = {
     technologies: "Teknologi Dikuasai",
     technologiesDescription:
       "Teknologi web modern dan framework yang dipelajari",
+    bungaSri:
+      "Landing page resmi PT. Bunga Sri Rejeki Lestari, perusahaan developer properti & kontraktor dengan kantor di Makassar dan Kendari. Menampilkan profil perusahaan, visi & misi, portofolio proyek perumahan, legalitas, dan kontak.",
   },
 };
